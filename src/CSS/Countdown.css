@@ -1,0 +1,14 @@
+.App_countdown {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .time {
+    font-size: 32px;
+  }
+  
