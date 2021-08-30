@@ -1,48 +1,52 @@
-import React from 'react';
+import React from 'react'
+import * as THREE from 'three';
+import Slide from 'react-reveal/Slide';
+import { useState, useEffect, useRef } from 'react'
+import WAVES from '../../node_modules/vanta/dist/vanta.net.min'
 
-
-import Countdown from './Countdown';
-
-
-import "../CSS/home.css";
 
 const Home = () => {
-    return (
-        <div>
+    const [vantaEffect, setVantaEffect] = useState(0)
+    const myRef = useRef(null)
+    useEffect(() => {
+        if (!vantaEffect) {
+            window.THREE = THREE;
+            setVantaEffect(WAVES({
+                el: myRef.current,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xff2b06,
+                backgroundColor: 0x000000,
+                THREE: window.THREE
+            }));
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
 
-            {/* What is Tedx */}
-            {/* <Slide to bottom> */}
-            <section className="pt100 pb100">
-                <div className="container">
-                    <div className="section_title">
-                        <h3 className="title">
-                            What is <span style={{ color: "red", fontWeight: "bold" }}>Ted<sup>x</sup></span>
-                        </h3>
-                        <div className="row justify-content-center">
-                            <div className="col-12 col-md-12 para">
-                                <p>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxNITDurgapur, where x = independently organized TED event. At our TEDxNITDurgapur event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized. For more information, you can check out <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank"><u>TEDx Program Initiative</u></a>.</p>
+    
+    return (
+        <div className="top-main" ref={myRef}>
+            <section className="home ">
+                <div className="container-fluid justify-content-center align-items-center">
+                    <div className="row  vh-100  justify-content-center align-items-center" >
+                        <Slide to bottom>
+                            <div className="col-md-6" style={{ marginTop: "-80px" }}>
+                                <h1 className="" style={{ fontSize: "7em", color: "#fff"}}>TED<sup><sup><sub>x</sub></sup></sup><span> NIT Dgp </span></h1>
+                                <h4 className="" style={{ color: "#878787" }}> x = independently organized TED event </h4>
                             </div>
-                        </div>
+                        </Slide>
                     </div>
                 </div>
             </section>
-            {/* </Slide> */}
-            <section className="" >
-
-                {/* <UrgeWithPleasureComponent />
-                <UrgeWithPleasureComponent />
-                <UrgeWithPleasureComponent />
-                <UrgeWithPleasureComponent /> */}
-                <Countdown />
-
-            </section>
-
-
-
-
-
-        </div>
+        </div> 
     )
 }
 
-export default Home;
+export default Home

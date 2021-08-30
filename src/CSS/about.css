@@ -1,0 +1,39 @@
+.container-home-about {
+    background-color: #fff !important;
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    min-width: 375px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+.section_title .title:before {
+    width: 30px;
+    content: " ";
+    position: absolute;
+    border-top: solid 3px #f50136;
+    left: 0;
+    top: 0;
+}
+
+
+.section_title .title {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 36px;
+}
+
+.para a{
+    text-decoration: none;
+    padding-top: 10px;
+    color: #ff2b06;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.para a:hover{
+    color: #1b1b1b;
+    transition: 0.3s ease-in-out;
+}
