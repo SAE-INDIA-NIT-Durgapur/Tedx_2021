@@ -1,0 +1,59 @@
+.register{
+    background-color: #1b1b1b;
+}
+
+.Coming_Soon {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    
+  
+    margin-top: 25vh;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+  .image_register{
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+
+    max-width: 300px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+   
+  }  
+  
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    25%{
+        background-position: -250%;
+    }
+    50%{
+        background-position: 0%;
+    }
+    75%{
+        background-position: 250%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
