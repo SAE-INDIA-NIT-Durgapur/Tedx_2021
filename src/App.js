@@ -11,6 +11,7 @@ import Home from "./components/Home"
 import About from "./components/About"
 import Info from './components/Aboutus';
 import { Switch, Route } from 'react-router-dom';
+import Countdown from './components/Countdown';
 
 function App() {
 
@@ -58,7 +59,7 @@ function App() {
         <Switch>
 
           <Route exact path="/" >
-            <Home /><About/>
+            <Home /><About/><Countdown />
           </Route>
           <Route exact path="/about" >
             <Info />
