@@ -1,6 +1,22 @@
+.fluid-container-loader{
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fade 3.5s ease-in-out;
+}
+
+@keyframes fade {
+  0%   {opacity: 0;
+  background-color: #1b1b1b;}
+  50%  {opacity: 1;
+  background-color:#1b1b1b;}
+  100% {opacity: 0;
+  background-color:#1b1b1b;}
+}
 
 footer {
   padding: 2rem 0;
-  background-color: #212529;
-  
+  background-color: #1b1b1b; 
 }
