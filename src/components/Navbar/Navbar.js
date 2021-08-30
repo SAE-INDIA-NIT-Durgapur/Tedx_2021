@@ -100,10 +100,17 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" exact>
+              <NavLink className="nav-link" to="/register" exact>
                 <i 
                 className="far fa-copy">
                 </i>Register
+              </NavLink>
+            </li>
+              <li className="nav-item">
+              <NavLink className="nav-link" to="/team" exact>
+                <i 
+                className="far fa-chart-bar">
+                </i>Team
               </NavLink>
             </li>
         </ul>

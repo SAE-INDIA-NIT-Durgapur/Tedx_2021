@@ -1,3 +1,25 @@
+/*no scroll-bar*/
+body {
+  overflow-y: scroll;
+  cursor: context-menu;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* no scroll bar ended*/
+
+
 .fluid-container-loader{
   background-color: #1b1b1b;
   display: flex;
