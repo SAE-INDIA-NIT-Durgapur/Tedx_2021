@@ -12,6 +12,7 @@ import About from "./components/About"
 import Info from './components/Aboutus';
 import { Switch, Route } from 'react-router-dom';
 import Countdown from './components/Countdown';
+import Team from './components/Team';
 
 function App() {
 
@@ -71,6 +72,10 @@ function App() {
 
           <Route exact path="/sponsors" >
             <Sponsors />
+          </Route>
+
+          <Route exact path="/team" >
+            <Team />
           </Route>
 
           <Route exact path='/*' />
