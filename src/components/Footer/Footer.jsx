@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Footer.css'
 import img from './tedxnitdgp.png' 
 
@@ -66,16 +67,12 @@ const Footer = () => {
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><NavLink to="/" exact>Home</NavLink></li>
+                                <li><NavLink to="/about" exact>About Us</NavLink></li>                                                              
+                                <li><NavLink to="/speakers" exact>Speakers</NavLink></li>
+                                <li><NavLink to="/sponsors" exact>Sponsors</NavLink></li> 
+                                <li><NavLink to="/team" exact>Team</NavLink></li>
+                                <li><NavLink to="/register" exact>Register</NavLink></li>
                             </ul>
                         </div>
                     </div>
