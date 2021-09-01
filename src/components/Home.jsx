@@ -21,7 +21,7 @@ const Home = () => {
                 scale: 1.00,
                 scaleMobile: 1.00,
                 color: 0xff2b06,
-                backgroundColor: 0x000000,
+                backgroundColor: 0x1b1b1b,
                 THREE: window.THREE
             }));
         }
