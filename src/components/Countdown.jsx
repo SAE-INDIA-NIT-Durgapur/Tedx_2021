@@ -1,22 +1,3 @@
-// import { CountdownCircleTimer } from 'react-countdown-circle-timer'
-
-// const UrgeWithPleasureComponent = () => (
-//   <CountdownCircleTimer
-//     isPlaying
-//     duration={408}
-//     colors={[
-//       ['#004777', 0.33],
-//       ['#F7B801', 0.33],
-//       ['#A30000', 0.33],
-//     ]}
-//   >
-//     {({ remainingTime }) => remainingTime}
-//   </CountdownCircleTimer>
-// )
-
-// export default UrgeWithPleasureComponent;
-
-
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import "../CSS/Countdown.css" ;
@@ -56,7 +37,9 @@ function Countdown() {
 
   return (
     <>
-    <div className="App_countdown">
+    <div className="fluid-container App_countdown">
+
+    <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#ff2b06"]]}
@@ -67,6 +50,8 @@ function Countdown() {
           renderTime("days", getTimeDays(daysDuration - elapsedTime))
         }
       </CountdownCircleTimer>
+      </div>
+      <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#ff2b06"]]}
@@ -80,6 +65,8 @@ function Countdown() {
           renderTime("hours", getTimeHours(daySeconds - elapsedTime))
         }
       </CountdownCircleTimer>
+      </div>
+      <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#ff2b06"]]}
@@ -93,6 +80,8 @@ function Countdown() {
           renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))
         }
       </CountdownCircleTimer>
+      </div>
+      <div className="counter">
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#ff2b06"]]}
@@ -106,6 +95,7 @@ function Countdown() {
           renderTime("seconds", getTimeSeconds(elapsedTime))
         }
       </CountdownCircleTimer>
+      </div>
     </div>
     </>
   );

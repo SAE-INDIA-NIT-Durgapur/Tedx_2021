@@ -1,0 +1,99 @@
+.container-fluid-aboutus{
+    background-color: #1b1b1b;
+}
+.col-12 h2{
+    color: white;
+}
+.breadcrumb{
+    background-color: #1b1b1b;
+}
+.breadcrumb-item{
+    color:white;
+}
+.breadcrumb a{
+    color: white;
+}
+.MuiTypography-h2 {
+    color: #808080;
+    font-size: 2.25rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    line-height: 2.5rem;
+    font-display: swap;
+}
+
+.jss244 {
+    color: #FF2B06;
+    font-size: 2.5rem;
+}
+@media (max-width:1295px){
+    .jss244{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px){
+.MuiTypography-h2 {
+    font-size: 1.50rem;
+    line-height: 1.75rem;
+}}
+.col-md-8{
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 1.75 rem;
+    color: white;
+
+}
+
+#faqs h1{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    padding: 20px 0 50px 0;
+}
+
+
+.accordion .card{
+    border-radius: 10px;
+    background-color:none;
+    border-left-width: 0;
+    border-right-width: 0;
+    color: white;
+}
+
+.accordion .card .card-header{
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0;
+}
+.accordion .card-header h2{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.accordion .card-header .btn{
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+.accordion .card-header i{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+}
+
+#faqs .card{
+    background-color: #171a18;
+}
+#faqs a{
+    color: white;
+    font-family: helvetica;
+}
+#faqs .collapse{
+    color: white;
+}
+#faqs .card-body{
+    color: white;
+}

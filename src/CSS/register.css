@@ -1,0 +1,51 @@
+.register-main {
+  background-color: #1b1b1b;
+}
+
+.register{
+    background-color: #1b1b1b;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.Coming_Soon {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-left: -30px;
+  }
+
+  .image_register{ 
+    padding: 10px;
+    width: 50%;
+    min-width: 375px;
+  }  
+  
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    25%{
+        background-position: -250%;
+    }
+    50%{
+        background-position: 0%;
+    }
+    75%{
+        background-position: 250%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
