@@ -1,7 +1,57 @@
-.sponsors {
+ .sponsors {
+    padding-top: 70px;
+    padding-left: 40px; 
     background-color: #1b1b1b;
 }
 
+hr {
+    border: none;
+    display: block;
+    border: 1px;
+    overflow: hidden;
+    background-color: white;
+    width: 200px;
+}
+
+.heading-sponsors{
+    font-weight: 900;
+    color: rgb(77, 77, 77);
+    font-size: 40px;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+}
+
+.heading-sponsors span{
+    color: #ff2b06b7;
+}
+
+.content-sponsors{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    color: rgb(160, 160, 160);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sponsors_coming_soon {
+    font-family: "Roboto";
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-left: -30px;
+}
+
+
+/*
 .row-sponsors h1 {
     text-align: center;
     font-size: 80px;
@@ -47,4 +97,4 @@
     .sponsors-img {
         max-width: 20%;
     }
-}
+} */

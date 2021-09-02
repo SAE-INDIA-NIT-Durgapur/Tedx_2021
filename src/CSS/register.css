@@ -13,8 +13,8 @@
     font-family: "Roboto";
     text-transform: uppercase;
     text-align: center;
-    font-size: 80px;
-    letter-spacing: 4px;
+    font-size: 60px;
+    letter-spacing: 2px;
     overflow: hidden;
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@
     animation: animate 6s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-left: -30px;
   }
 
   .image_register{ 
