@@ -19,10 +19,7 @@
     "three": "^0.132.2",
     "vanta": "^0.5.21",
     "web-vitals": "^1.0.1",
-    "yarn": "^1.22.11",
-    "engines": {
-    "node": "^12.13.1"
-    }
+    "yarn": "^1.22.11"
   },
   "scripts": {
     "start": "react-scripts start",
