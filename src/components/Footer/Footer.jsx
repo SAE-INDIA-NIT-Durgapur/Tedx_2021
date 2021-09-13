@@ -1,12 +1,35 @@
 
 import React from 'react'
+import {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import './Footer.css'
 import img from './tedxnitdgp.png' 
-import {AiFillFacebook,AiFillInstagram} from "react-icons/ai"
+import {AiFillFacebook,AiFillInstagram,AiOutlineArrowUp} from "react-icons/ai"
+import {FaArrowCircleUp} from "react-icons/fa"
 
 const Footer = () => {
-
+const [visible, setVisible] = useState(false)
+  
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300){
+      setVisible(true)
+    } 
+    else if (scrolled <= 300){
+      setVisible(false)
+    }
+  };
+  
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+  
+  window.addEventListener('scroll', toggleVisible);
     return (
         <div>
         <footer className="footer-section">    
@@ -94,7 +117,9 @@ const Footer = () => {
                     </div> */}
                 </div>
             </div>
+             
         </div>
+        
         <div className="copyright-area">
             <div className="container">
                 <div className="row">
@@ -103,21 +128,19 @@ const Footer = () => {
                             <p>Copyright &copy; 2021, All Right Reserved</p>
                         </div>
                     </div>
-                    {/* <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div className="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div> */}
+                   
                 </div>
             </div>
+              
         </div>
+      <div className="">
+        <button className="text-end float-right " style={{backgroundColor:"red"}}>
+     <AiOutlineArrowUp color="white" size={20} onClick={scrollToTop} 
+     style={{display: visible ? 'inline' : 'none'}} />
+    </button>
+    </div>
     </footer>
+    
         </div>
     )
 }
