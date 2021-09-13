@@ -4,6 +4,7 @@ import '../CSS/Team.css'
 const TeamView = () => {
    return (
        <>
+       <h1 className="text-center" style={{color:"#FF2B06"}}>Our Team</h1>
        <div className="fluid-container container-team">
 
       <div className="card">

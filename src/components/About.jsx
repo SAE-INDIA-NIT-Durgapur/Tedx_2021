@@ -7,7 +7,7 @@ const About = () => {
             
             {/* What is Tedx */ }
             <Slide to bottom>
-                <div className="container-home-about">
+                {/* <div className="container-home-about">
                     <div className="section_title">
                         <div className="container justify-content-center">
                             <div className="col para">
@@ -18,7 +18,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>                   
-                </div>
+                </div> */}
              </Slide> 
 
         </div>

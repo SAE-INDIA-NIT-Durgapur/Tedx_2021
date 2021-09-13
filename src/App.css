@@ -43,3 +43,18 @@ footer {
   padding: 2rem 0;
   background-color: #1b1b1b; 
 }
+
+
+/*home*/
+.tedx1{
+  font-size:5em;
+}
+@media (max-width:500px)
+{
+  .tedx1{
+    font-size:3em;
+  }
+  .tedx2{
+    font-size:1em;
+  }
+}

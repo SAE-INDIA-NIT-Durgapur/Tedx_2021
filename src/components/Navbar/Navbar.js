@@ -1,6 +1,7 @@
 import React , {useEffect} from 'react'
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+import {GiHamburgerMenu} from 'react-icons/gi'
 import $ from 'jquery';
 
 const Navbar = () => {
@@ -44,21 +45,20 @@ const Navbar = () => {
   }, []);
 
   return (
-  <nav className="navbar navbar-expand-lg navbar-mainbg">
+  <nav className="navbar navbar-expand-lg navbar-mainbg sticky-top">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
         TED<sup>x</sup><span> NITDurgapur</span>
       </NavLink>
     
     
-      <button 
-        className="navbar-toggler"
+      
+       <GiHamburgerMenu  className="navbar-toggler" size={50}
         onClick={ function(){
           setTimeout(function(){ animation(); });
         }}
-        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i className="fas fa-bars text-black"></i> 
-      </button>
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" color="white"/>
+      
  
       <div 
         className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -93,6 +93,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/team" exact>
+                <i 
+                className="far fa-chart-bar">
+                </i>Team
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/sponsors" exact>
                 <i 
                 className="far fa-chart-bar">
@@ -106,13 +113,7 @@ const Navbar = () => {
                 </i>Register
               </NavLink>
             </li>
-              <li className="nav-item">
-              <NavLink className="nav-link" to="/team" exact>
-                <i 
-                className="far fa-chart-bar">
-                </i>Team
-              </NavLink>
-            </li>
+              
         </ul>
       </div>
   </nav>

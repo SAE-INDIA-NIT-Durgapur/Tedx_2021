@@ -16,10 +16,16 @@ const Sponsors = () => {
                 </p>
                 <br/>
                 
+                <div className="fluid-container register-main">
+            <div className="row container register">
+               
                 <p 
-                className="sponsors_coming_soon"> 
+                className="Coming_Soon"> 
                     Sponsors<br /> Coming soon
                 </p>
+                
+            </div>
+        </div>
             </div>
         </div>
 

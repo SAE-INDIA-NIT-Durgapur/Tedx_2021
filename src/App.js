@@ -62,7 +62,7 @@ function App() {
         <Switch>
  
           <Route exact path="/" >
-            <Home /><About/><Countdown />
+            <Home /><About/>
           </Route>
           <Route exact path="/about" >
             <Info />

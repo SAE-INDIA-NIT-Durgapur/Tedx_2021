@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import Slide from 'react-reveal/Slide';
 import { useState, useEffect, useRef } from 'react'
 import WAVES from '../../node_modules/vanta/dist/vanta.net.min'
+import Countdown from "./Countdown"
 
 
 const Home = () => {
@@ -38,8 +39,9 @@ const Home = () => {
                     <div className="row  vh-100  justify-content-center align-items-center" >
                         <Slide to bottom>
                             <div className="col-md-6" style={{ marginTop: "-80px" }}>
-                                <h1 className="" style={{ fontSize: "7em", color: "#fff"}}>TED<sup><sup><sub>x</sub></sup></sup><span> NIT Dgp </span></h1>
-                                <h4 className="" style={{ color: "#878787" }}> x = independently organized TED event </h4>
+                                <h1 className="tedx1 text-center text-light">TED<sup><sup><sub>x</sub></sup></sup><span> NIT Dgp </span></h1>
+                                <h4 className=" tedx2 text-center text-muted"> x = independently organized TED event </h4>
+                                <Countdown/>
                             </div>
                         </Slide>
                     </div>
