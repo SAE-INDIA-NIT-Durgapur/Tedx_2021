@@ -7,10 +7,8 @@ const Speakers = () => {
     return (
         
           <div className="speakers-all">
-             {/* <div className="quote">
-                <span className="sub-quote">Why to choose</span> TED
-             </div>  */}
-<Slide right>
+            
+<Slide to right>
              <div className="container contain">
              <div className="col-10 ted-para" >
               <h2 className="p1">
@@ -36,13 +34,23 @@ const Speakers = () => {
             </div>
                </div> 
                </Slide>
+               <div className="fluid-container register-main">
+            <div className="row container register">
+               
+                <p 
+                className="Coming_Soon"> 
+                    To Be Announced soon
+                </p>
+                
+            </div>
+        </div>
                {/* <p className="container ans">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Nihil ea sapiente pariatur iste dignissimos deleniti eaque
                    aspernatur qui modi deserunt inventore temporibus officiis
                     fugit excepturi incidunt, animi explicabo alias! Deserunt.
                     </p> */}
               <Slide to bottom>
-             <div className="fluid-container">
+             {/* <div className="fluid-container">
         <div className="block">
           <div className="overlay" />
           <div className="block--text">
@@ -91,7 +99,7 @@ const Speakers = () => {
             <div className="text--person">Eleanor Roosevelt</div>
           </div>
         </div>
-      </div>
+      </div> */}
       </Slide>
          </div>  
         

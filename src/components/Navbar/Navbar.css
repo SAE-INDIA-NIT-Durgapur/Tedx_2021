@@ -46,7 +46,7 @@
     font-size: 18px;
     display: block;
     padding: 20px 20px;
-    transition-duration: 0.3s;
+    transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.68, -0.95, 0.265, 1.55);
     font-weight: bolder;
     position: relative;
@@ -165,11 +165,11 @@
         left: -25px;
     }
 
-    .navbar-toggler{
+    /* .navbar-toggler{
         height: 30px;
         margin-right: 10px;
         background-color: white;
-    }
+    } */
 
     .navbar-toggler .fas{
         background-color: red;
