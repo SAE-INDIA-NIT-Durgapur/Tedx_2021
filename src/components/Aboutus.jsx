@@ -101,7 +101,7 @@ const Aboutus = () => {
       </section>
   
       <Slide to bottom>
-      <section id="faqs">
+      {/* <section id="faqs">
      <div className="container p-1 p-sm-5">
        <h1>FAQ's</h1>
      <div id="accordion">
@@ -170,7 +170,7 @@ const Aboutus = () => {
   </div>
 </div>
      </div>
-      </section>
+      </section> */}
       </Slide>
     </div>
 
