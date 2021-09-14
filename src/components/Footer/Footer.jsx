@@ -131,17 +131,24 @@ const [visible, setVisible] = useState(false)
                    
                 </div>
             </div>
-              
+
+        <div className="">
+        <button className="text-end float-right " style={{
+        backgroundColor:"#ff2b06",
+        padding:"10px",
+        border:"none", 
+        borderRadius:"10px",
+        marginRight:"10px",
+        fontWeight:"bold"}}>
+        <AiOutlineArrowUp color="white" size={20} onClick={scrollToTop} 
+        style={{display: visible ? 'inline' : 'none'}} />
+        </button>
         </div>
-      <div className="">
-        <button className="text-end float-right " style={{backgroundColor:"red"}}>
-     <AiOutlineArrowUp color="white" size={20} onClick={scrollToTop} 
-     style={{display: visible ? 'inline' : 'none'}} />
-    </button>
-    </div>
+
+        </div>
     </footer>
     
-        </div>
+    </div>
     )
 }
 
