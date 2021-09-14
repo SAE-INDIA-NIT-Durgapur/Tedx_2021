@@ -57,7 +57,7 @@ const Navbar = () => {
         onClick={ function(){
           setTimeout(function(){ animation(); });
         }}
-        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" color="white"/>
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" color="black"/>
       
  
       <div 

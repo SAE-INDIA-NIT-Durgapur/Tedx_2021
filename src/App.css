@@ -1,6 +1,6 @@
 /*no scroll-bar*/
 body {
-  background-color: #1b1b1b;
+  /* background-color: #1b1b1b; */
   overflow-y: scroll;
   cursor: context-menu;
   box-sizing: border-box;
@@ -48,6 +48,7 @@ footer {
 /*home*/
 .tedx1{
   font-size:5em;
+  font-family: 'Roboto';
 }
 @media (max-width:500px)
 {

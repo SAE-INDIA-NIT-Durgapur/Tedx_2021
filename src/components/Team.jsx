@@ -1,12 +1,15 @@
 import React from 'react'
 import '../CSS/Team.css'
+import Slide from 'react-reveal/Slide';
 
 const TeamView = () => {
    return (
        <>
-       <h1 className="text-center" style={{color:"#FF2B06"}}>Our Team</h1>
+       <h1 className="text-center" style={{color:"#FF2B06", paddingTop:"50px"}}>Our Team</h1>
+      
        <div className="fluid-container container-team">
-
+      
+      <Slide to bottom>
       <div className="card">
         <div className="imgBx">
           <img
@@ -25,7 +28,9 @@ const TeamView = () => {
           </ul>
         </div>   
       </div>
+      </Slide>
 
+      <Slide to bottom>
       <div className="card">
         <div className="imgBx">
           <img
@@ -44,7 +49,9 @@ const TeamView = () => {
           </ul>
         </div>   
       </div>
+      </Slide>
 
+      <Slide to bottom>
       <div className="card">
         <div className="imgBx">
           <img
@@ -63,7 +70,9 @@ const TeamView = () => {
           </ul>
         </div>   
       </div>
+      </Slide>
 
+        <Slide to bottom>
        <div className="card">
         <div className="imgBx">
           <img
@@ -82,7 +91,9 @@ const TeamView = () => {
           </ul>
         </div>   
       </div>
-       
+      </Slide>
+      
+       <Slide to bottom>
        <div className="card">
         <div className="imgBx">
           <img
@@ -101,6 +112,7 @@ const TeamView = () => {
           </ul>
         </div>   
       </div>
+      </Slide>
     </div>
        </>
    )
