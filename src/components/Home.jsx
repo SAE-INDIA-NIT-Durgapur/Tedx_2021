@@ -39,8 +39,8 @@ const Home = () => {
                     <div className="row  vh-100  justify-content-center align-items-center" >
                         <Slide to bottom>
                             <div className="col-md-6" style={{ marginTop: "-80px" }}>
-                                <h1 className="tedx1 text-center text-light">TED<sup><sup><sub>x</sub></sup></sup><span> NIT Dgp </span></h1>
-                                <h4 className=" tedx2 text-center text-muted"> x = independently organized TED event </h4>
+                                <h1 className="tedx1 text-center text-light"><span style={{color:"#FF2B06"}}>TED</span><sup style={{color:"#FF2B06"}}><sup><sub>x</sub></sup></sup><span>NITDurgapur</span></h1>
+                                <h4 className=" tedx2 text-center text-light"> <span style={{color:"#FF2B06"}}>x</span> = independently organized TED event </h4>
                                 <Countdown/>
                             </div>
                         </Slide>

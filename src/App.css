@@ -53,9 +53,9 @@ footer {
 @media (max-width:500px)
 {
   .tedx1{
-    font-size:3em;
+    font-size:2em;
   }
   .tedx2{
-    font-size:1em;
+    font-size:.8em;
   }
 }
