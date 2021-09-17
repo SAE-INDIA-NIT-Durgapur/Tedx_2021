@@ -6,8 +6,8 @@ import "../CSS/AboutUs.css";
 const Aboutus = () => {
   return (
 
-      <div className="container-fluid container-fluid-aboutus">
-        <Slide to bottom>
+    <div className="container-fluid container-fluid-aboutus">
+      <Slide to bottom>
         <section className="breadcrumps-section">
           <div className="container p-1 p-sm-3">
             <div className="row">
@@ -18,37 +18,37 @@ const Aboutus = () => {
           </div>
         </section>
       </Slide>
-      
+
       <section className="about-company-section">
         <div className="container p-1 p-sm-3">
           <div className="row">
-          <Slide to bottom>
-            <div className="col-md-4">
-              <img
-                className="img-fluid"
-                src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
-                alt="tedimg1"
-              />
-              <hr />
-            </div>
+            <Slide to bottom>
+              <div className="col-md-4">
+                <img
+                  className="img-fluid"
+                  src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
+                  alt="tedimg1"
+                />
+                <hr />
+              </div>
             </Slide>
             <Slide to bottom>
-            <div className="col-md-8">
-              <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                What is<span className="jss244"> TEDx</span>
-              </h2>
-              <hr />
-              <p className="mb-0">
-               TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.
-              </p>
-              <hr />
-            </div>
-            </Slide>         
+              <div className="col-md-8">
+                <h2 className="MuiTypography-root jss241 MuiTypography-h2">
+                  What is<span className="jss244"> TEDx</span>
+                </h2>
+                <hr />
+                <p className="mb-0">
+                  Founded in 1984, TED is a nonprofit devoted to spreading ideas, usually in the form of short powerful talks. A global community, wherein people regardless of their discipline or culture can seek a deeper understanding of the world, TED believes vehemently in the power of ideas to alter attitudes, lives and ultimately the world, for the better. TED Conferences are dedicated to the organization’s global mission of researching and sharing meaningful new ideas, in order to assist in amplifying ideas and innovations that matter. TED’s initiatives are a winning formula of brilliant, curious minds and groundbreaking content in an immersive and educational environment.
+                </p>
+                <hr />
+              </div>
+            </Slide>
           </div>
         </div>
         <div className="container p-1 p-sm-3">
           <div className="row">
-          {/* <Slide to bottom>
+            {/* <Slide to bottom>
             <div className="col-12">
               <h2 className="MuiTypography-root jss241 MuiTypography-h2">
                 What is<span className="jss244"> TEDx</span>
@@ -87,7 +87,7 @@ const Aboutus = () => {
             </div>
             </Slide> */}
             <Slide to bottom>
-            {/* <div className="col-md-4">
+              {/* <div className="col-md-4">
               <img
                 className="img-fluid"
                 src="https://conferences.ted.com/TED2012/images/carousel/LB_carousel_10_Prism.jpg"
@@ -99,9 +99,9 @@ const Aboutus = () => {
           </div>
         </div>
       </section>
-  
+
       <Slide to bottom>
-      {/* <section id="faqs">
+        {/* <section id="faqs">
      <div className="container p-1 p-sm-5">
        <h1>FAQ's</h1>
      <div id="accordion">
