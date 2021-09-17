@@ -61,7 +61,7 @@ footer {
 }
 
 .top-main{
-  background: url("https://www.bridgeport.edu/sites/default/files/2019-11/tedx-logo-hero_0.jpg");
+  background: url("./images/bg.jpg");
   background-size: cover;
   height: 100vh;
   background-position: center;
