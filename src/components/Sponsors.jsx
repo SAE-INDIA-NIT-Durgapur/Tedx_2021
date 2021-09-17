@@ -5,27 +5,29 @@ const Sponsors = () => {
     return (
 
         <div className="container sponsors">
-        <hr/>
+            <hr />
             <div className="heading-sponsors">
-                Why to Sponsor a <span>TED</span> event ?
+                Why partner with <span>TEDxNITDurgapur</span>?
             </div>
             <div className="content-sponsors">
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    TEDxNITDurgapur being a prolific coalition, has a promising range of audiences from the domains of technology, innovation, research, sociology and humanities. This collaboration will have a vital impact on innumerable masses through its brand value and rage. This diverse network is easily accessible and hence attracts a considerable population. The additional upshot of the combo is its outstanding theme "Ideas Worth Sharing". As a cherry on top is the precise theme " The Beautiful Mind" which is as fabulous as it sounds.
+
+                    The event not only surpasses the social standards but also wins an emotional aspect of the audience. TEDxNITDurgapur has its mention for acclaim on social media like Facebook, Instagram and YouTube. This professes tremendous reach to communities across the globe.
 
                 </p>
-                <br/>
-                
+                <br />
+
                 <div className="fluid-container register-main">
-            <div className="row container register">
-               
-                <p 
-                className="Coming_Soon"> 
-                    Sponsors<br /> Coming soon
-                </p>
-                
-            </div>
-        </div>
+                    <div className="row container register">
+
+                        <p
+                            className="Coming_Soon">
+                            Sponsors<br /> Coming soon
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
 

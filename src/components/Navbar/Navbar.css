@@ -85,7 +85,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background-color: #1b1b1b;
     border-top-left-radius: 15px;
