@@ -7,7 +7,7 @@ import img from './tedxnitdgp.png'
 import { AiFillFacebook, AiFillInstagram, AiOutlineArrowUp } from "react-icons/ai"
 import { FaArrowCircleUp } from "react-icons/fa"
 
-const Footer = () => {
+const Footer = (props) => {
     const [visible, setVisible] = useState(false)
 
     const toggleVisible = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
                                         <h4>Call us</h4>
-                                        <span>9874700937-Chetan Gupta</span>
+                                        <span>{props.data}</span>
                                     </div>
                                 </div>
                             </div>
