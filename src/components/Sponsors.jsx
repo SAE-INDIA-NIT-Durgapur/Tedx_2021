@@ -8,7 +8,8 @@ const Sponsors = () => {
         <div className="container sponsors">
             <hr />
             <div className="heading-sponsors">
-                Why partner with <span><img className="w-50" src={logo} alt="img" /></span>?
+                Why partner with <span>TEDx<pull>NITDurgapur</pull></span>?
+                {/* <img className="w-50" src={logo} alt="img" /> */}
             </div>
             <div className="content-sponsors">
                 <p>

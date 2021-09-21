@@ -25,6 +25,10 @@ hr {
     color: #ff2b06b7;
 }
 
+.heading-sponsors pull{
+    color: rgb(160, 160, 160);
+}
+
 .content-sponsors{
     font-family: 'Comfortaa', cursive;
     font-weight: 600;
