@@ -1,13 +1,14 @@
 import React from 'react'
 import '../CSS/sponsor.css'
 import img1 from '../images/logo512.png'
+import logo from './tedxnitdgp.png'
 const Sponsors = () => {
     return (
 
         <div className="container sponsors">
             <hr />
             <div className="heading-sponsors">
-                Why partner with <span>TEDxNITDurgapur</span>?
+                Why partner with <span><img className="w-50" src={logo} alt="img" /></span>?
             </div>
             <div className="content-sponsors">
                 <p>

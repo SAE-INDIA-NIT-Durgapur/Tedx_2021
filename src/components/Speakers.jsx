@@ -4,12 +4,12 @@ import Slide from 'react-reveal/Slide'
 
 
 const Speakers = () => {
-    return (
-        
-          <div className="speakers-all">
-            
-<Slide to right>
-             <div className="container contain">
+  return (
+
+    <div className="speakers-all">
+
+      <Slide to right>
+        {/* <div className="container contain">
              <div className="col-10 ted-para" >
               <h2 className="p1">
                 Why to choose<span className="p2">   TED</span>
@@ -32,25 +32,25 @@ const Speakers = () => {
               </p>
               
             </div>
-               </div> 
-               </Slide>
-               <div className="fluid-container register-main">
-            <div className="row container register">
-               
-                <p 
-                className="Coming_Soon"> 
-                    To Be Announced soon
-                </p>
-                
-            </div>
+               </div>  */}
+      </Slide>
+      <div className="fluid-container register-main">
+        <div className="row container register">
+
+          <p
+            className="Coming_Soon">
+            To Be Announced soon
+          </p>
+
         </div>
-               {/* <p className="container ans">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </div>
+      {/* <p className="container ans">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Nihil ea sapiente pariatur iste dignissimos deleniti eaque
                    aspernatur qui modi deserunt inventore temporibus officiis
                     fugit excepturi incidunt, animi explicabo alias! Deserunt.
                     </p> */}
-              <Slide to bottom>
-             {/* <div className="fluid-container">
+      <Slide to bottom>
+        {/* <div className="fluid-container">
         <div className="block">
           <div className="overlay" />
           <div className="block--text">
@@ -101,9 +101,9 @@ const Speakers = () => {
         </div>
       </div> */}
       </Slide>
-         </div>  
-        
-    )
+    </div>
+
+  )
 }
 
 export default Speakers

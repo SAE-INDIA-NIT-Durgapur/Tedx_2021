@@ -15,22 +15,22 @@ import { Switch, Route } from 'react-router-dom';
 import Countdown from './components/Countdown';
 import Team from './components/Team'
 import Register from './components/Register'
- 
+
 function App() {
- 
+
   const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: location.default,
-  rendererSettings: {
-    preserveAspectRatio: "none",
-  },
-};
- 
+    loop: true,
+    autoplay: true,
+    animationData: location.default,
+    rendererSettings: {
+      preserveAspectRatio: "none",
+    },
+  };
+
   const [data, setData] = useState([]);
   const [loading, setloading] = useState(undefined);
   const [completed, setcompleted] = useState(undefined);
- 
+
   useEffect(() => {
     setTimeout(() => {
       fetch("https://jsonplaceholder.typicode.com/posts")
@@ -38,63 +38,69 @@ function App() {
         .then((json) => {
           setData(json);
           setloading(true);
- 
+
           setTimeout(() => {
             setcompleted(true);
           }, 1000);
         });
     }, 3000);
   }, []);
- 
+
   return (
     <>
-    { 
-      !(loading) ? 
-      <div className="fluid-container-loader">
-      <div className="loader-op">
-      <Lottie options={defaultOptions} height={200} width={200} />
-      </div>
-      </div>
-      :
-      <>
-      <Navbar />
-      <div className="App">
-        <Switch>
- 
-          <Route exact path="/" >
-            <Home /><About/>
-          </Route>
-          <Route exact path="/about" >
-            <Info />
-          </Route>
- 
-          <Route exact path="/speakers" >
-            <Speakers />
-          </Route>
- 
-          <Route exact path="/sponsors" >
-            <Sponsors />
-          </Route>
+      {
+        !(loading) ?
+          <div className="fluid-container-loader">
+            <div className="loader-op">
+              <Lottie options={defaultOptions} height={200} width={200} />
+            </div>
+          </div>
+          :
+          <>
+            <Navbar />
+            <div className="App">
+              <Switch>
 
-          <Route exact path="/team">
-            <Team />
-          </Route>
- 
-          <Route exact path="/register" >
-            <Register />
-          </Route>
- 
-          <Route exact path='/*' />
- 
-        </Switch>
- 
-      </div>
- 
-      <Footer />
-      </>
-    }
+                <Route exact path="/" >
+                  <Home />
+                  <Footer data={`Shubham Agarwal-9038055767`} />
+                </Route>
+                <Route exact path="/about" >
+                  <Info />
+                  <Footer data={`Rounak Das-7478528990`} />
+                </Route>
+
+                <Route exact path="/speakers" >
+                  <Speakers />
+                  <Footer data={`Soumik Hazra-74789 26623`} />
+                </Route>
+
+                <Route exact path="/sponsors" >
+                  <Sponsors />
+                  <Footer data={`Shubham Agarwal-9038055767`} />
+                </Route>
+
+                <Route exact path="/team">
+                  <Team />
+                  <Footer data={`Chetan Gupta-9874700937`} />
+                </Route>
+
+                <Route exact path="/register" >
+                  <Register />
+                  <Footer data={`Shubham Agarwal-9038055767`} />
+                </Route>
+
+                <Route exact path='/*' />
+
+              </Switch>
+
+            </div>
+
+
+          </>
+      }
     </>
   );
 }
- 
+
 export default App;
