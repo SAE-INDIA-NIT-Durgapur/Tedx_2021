@@ -1,7 +1,36 @@
 import React from 'react'
 import '../CSS/Team.css'
 import Slide from 'react-reveal/Slide';
-
+import chetan from '../images/profile_pics/Chetan Gupta Grayscale.jpg'
+import vishesh from '../images/profile_pics/v vishesh.png'
+import shubham from '../images/profile_pics/subham_agarwall.png'
+import soumik from '../images/profile_pics/Soumik Hazra.png'
+import sukanya from '../images/profile_pics/sukanya_dutta.png'
+import anurag from '../images/profile_pics/anurag singh.png'
+import divas from '../images/profile_pics/Divas Gupta.png'
+import suryadip from '../images/profile_pics/suryadip mondal.png'
+import satyam from '../images/profile_pics/Satyam Shorya Grayscale.jpg'
+import hemanth from '../images/profile_pics/hemanth.png'
+import aniket from '../images/profile_pics/aniketpanigrahi.png'
+import abhishek from '../images/profile_pics/abhisekh_singh.png'
+import rounak from '../images/profile_pics/Raunak Das Grayscale.jpg'
+import shubham_w from '../images/profile_pics/subham_gupta.png'
+import ankita from '../images/profile_pics/Ankita Mandal GrayScale.jpeg'
+import gaurav from '../images/profile_pics/kr. gaurav.png'
+import samriddho from '../images/profile_pics/samriddha_saha.png'
+import shubhangee from '../images/profile_pics/subhangee.png'
+import ayush_kujur from '../images/profile_pics/Ayush Kujur Grayscale.jpg'
+import Ayush_t from '../images/profile_pics/Ayush Tiwari.png'
+import dyuti from '../images/profile_pics/Dyuti Mitra.png'
+import sammanita from '../images/profile_pics/Sammanita Singh.png'
+import vishal from '../images/profile_pics/vishal jaiswal.png'
+import sivaji from '../images/profile_pics/SIVAJI GANESH NAIDU.png'
+import anwesha from '../images/profile_pics/Anwesha Dan.png'
+import tilak from '../images/profile_pics/Tilak Raj.png'
+import jissu from '../images/profile_pics/jissnu_kundu.png'
+import anshika from '../images/profile_pics/anshikachoudhary.png'
+import ambika from '../images/profile_pics/ambikaneela.png'
+import arunava from '../images/profile_pics/arunava_sarkar.png'
 const TeamView = () => {
    return (
        <>
@@ -14,7 +43,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src= {chetan}
             alt=""
           />
         </div>
@@ -35,7 +64,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={shubham}
             alt=""
           />
         </div>
@@ -56,7 +85,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={vishesh}
             alt=""
           />
         </div>
@@ -77,7 +106,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={rounak}
             alt=""
           />
         </div>
@@ -98,7 +127,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={shubhangee}
             alt=""
           />
         </div>
@@ -119,7 +148,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={ambika}
             alt=""
           />
         </div>
@@ -140,7 +169,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={ayush_kujur}
             alt=""
           />
         </div>
@@ -161,7 +190,7 @@ const TeamView = () => {
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={soumik}
             alt=""
           />
         </div>
@@ -203,7 +232,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={arunava}
             alt=""
           />
         </div>
@@ -224,7 +253,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={abhishek}
             alt=""
           />
         </div>
@@ -245,7 +274,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={gaurav}
             alt=""
           />
         </div>
@@ -266,7 +295,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={jissu}
             alt=""
           />
         </div>
@@ -287,7 +316,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={samriddho}
             alt=""
           />
         </div>
@@ -311,7 +340,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={divas}
             alt=""
           />
         </div>
@@ -332,7 +361,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={satyam}
             alt=""
           />
         </div>
@@ -353,7 +382,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={shubham_w}
             alt=""
           />
         </div>
@@ -374,7 +403,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={anurag}
             alt=""
           />
         </div>
@@ -395,7 +424,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={hemanth}
             alt=""
           />
         </div>
@@ -416,7 +445,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={ankita}
             alt=""
           />
         </div>
@@ -437,7 +466,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={sukanya}
             alt=""
           />
         </div>
@@ -458,7 +487,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={suryadip}
             alt=""
           />
         </div>
@@ -479,7 +508,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={anshika}
             alt=""
           />
         </div>
@@ -500,7 +529,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={vishal}
             alt=""
           />
         </div>
@@ -521,7 +550,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={sivaji}
             alt=""
           />
         </div>
@@ -542,7 +571,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={Ayush_t}
             alt=""
           />
         </div>
@@ -563,7 +592,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={tilak}
             alt=""
           />
         </div>
@@ -584,7 +613,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={anwesha}
             alt=""
           />
         </div>
@@ -605,7 +634,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={sammanita}
             alt=""
           />
         </div>
@@ -626,7 +655,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={dyuti}
             alt=""
           />
         </div>
