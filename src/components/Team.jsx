@@ -359,7 +359,7 @@ const TeamView = () => {
         </div>
         <div className="content">
           <div className="contentBx">
-            <h3>Shubham <br /><span>Web Developer</span></h3>
+            <h3>Shubham <br /><span></span></h3>
           </div>
           <ul className="sci">
             <li>
