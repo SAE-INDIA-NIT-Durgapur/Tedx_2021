@@ -79,7 +79,7 @@ const Footer = (props) => {
                                     <div className="footer-social-icon">
                                         <span>Follow us</span>
                                         <a href="https://www.facebook.com/SAENITD/"><AiFillFacebook size={32} /></a>
-                                        <a href="#"><AiFillInstagram size={32} /></a>
+                                        <a href="https://instagram.com/tedxnitdurgapur?utm_medium=copy_link"><AiFillInstagram size={32} /></a>
 
                                     </div>
                                 </div>

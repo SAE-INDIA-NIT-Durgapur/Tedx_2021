@@ -36,7 +36,18 @@ const Home = () => {
                         <Slide to bottom>
                             <div className="col-md-6" style={{ marginTop: "0px" }}>
                                 <img src={logo} style={{ position: "center", width: "100%" }} />
-                                <Countdown />
+                                <br />
+                                <br />
+                                <br />
+
+
+                                <p
+                                    className="Coming_Soon">
+                                    Coming soon...
+                                </p>
+
+
+                                {/* <Countdown /> */}
                             </div>
                         </Slide>
                     </div>

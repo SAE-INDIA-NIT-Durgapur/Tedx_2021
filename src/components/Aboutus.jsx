@@ -22,8 +22,36 @@ const Aboutus = () => {
       <section className="about-company-section">
         <div className="container p-1 p-sm-3">
           <div className="row">
+
             <Slide to bottom>
-              <div className="col-md-4">
+              <div className="col-md-8 order-sm-0 order-last">
+                <h2 className="MuiTypography-root jss241 MuiTypography-h2">
+                  About<span className="jss244">NIT Durgapur</span>
+                </h2>
+                <hr />
+                <p className="mb-0">
+                  Established in 1960, National Institute of Technology Durgapur is a premier engineering institute within the country, which since its inception has trained proficient engineers and leaders, whose achievements are awe inspiring. Our institute is home to a formidable talent pool, exhibiting remarkable skills in a multitude of domains. Ranked 29th for engineering and 6th ong NITs, according to the National Institutional Ranking Framework (NIRF), the excellence displayed by the institute in every academic year is a testament to its promising years ahead.
+
+                </p>
+                <hr />
+              </div>
+            </Slide>
+            <Slide to bottom>
+              <div className="col-md-4 ">
+                <img
+                  className="img-fluid"
+                  src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
+                  alt="tedimg1"
+                />
+                <hr />
+              </div>
+            </Slide>
+          </div>
+        </div>
+        <div className="container p-1 p-sm-3">
+          <div className="row">
+            <Slide to bottom>
+              <div className="col-md-4 ">
                 <img
                   className="img-fluid"
                   src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
@@ -33,7 +61,7 @@ const Aboutus = () => {
               </div>
             </Slide>
             <Slide to bottom>
-              <div className="col-md-8">
+              <div className="col-md-8 order-sm-3">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
                   What is<span className="jss244"> TED</span>
                 </h2>
@@ -50,7 +78,7 @@ const Aboutus = () => {
           <div className="row">
 
             <Slide to bottom>
-              <div className="col-md-8">
+              <div className="col-md-8 order-sm-0 order-last">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
                   What is<span className="jss244"> TEDx</span>
                 </h2>
@@ -64,7 +92,7 @@ const Aboutus = () => {
               </div>
             </Slide>
             <Slide to bottom>
-              <div className="col-md-4">
+              <div className="col-md-4 order-sm-0 ">
                 <img
                   className="img-fluid"
                   src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
@@ -78,7 +106,7 @@ const Aboutus = () => {
         <div className="container p-1 p-sm-3">
           <div className="row">
             <Slide to bottom>
-              <div className="col-md-4">
+              <div className="col-md-4 ">
                 <img
                   className="img-fluid"
                   src="https://learn.g2.com/hubfs/TED-talk-2016.jpg"
@@ -88,7 +116,7 @@ const Aboutus = () => {
               </div>
             </Slide>
             <Slide to bottom>
-              <div className="col-md-8">
+              <div className="col-md-8 ">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
                   What is<span className="jss244"> TEDxNITDurgapur</span>
                 </h2>
@@ -101,82 +129,12 @@ const Aboutus = () => {
                 <hr />
               </div>
             </Slide>
+
           </div>
         </div>
       </section>
 
-      <Slide to bottom>
-        {/* <section id="faqs">
-     <div className="container p-1 p-sm-5">
-       <h1>FAQ's</h1>
-     <div id="accordion">
-     <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="clearfix mb-0">
-        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          What is TEDx NIT Durgapur?
-        <i class="fa fa-angle-down"></i></a>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat 
-        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-        excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-        raw denim aesthetic synth nesciunt you probably haven't heard of them 
-        accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="clearfix mb-0">
-        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-          <i class="fa fa-angle-down"></i></a>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry 
-        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-        heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="clearfix mb-0">
-        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-          <i class="fa fa-angle-down"></i></a>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-        squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-        beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-        you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-     </div>
-      </section> */}
-      </Slide>
+
     </div>
 
   );
