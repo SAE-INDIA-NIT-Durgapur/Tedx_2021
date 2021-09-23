@@ -1,11 +1,12 @@
 .container-fluid-aboutus{
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
+    margin-top: 80px !important;
 }
 .col-12 h2{
     color: white;
 }
 .breadcrumb{
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
 }
 .breadcrumb-item{
     color:white;

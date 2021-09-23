@@ -1,8 +1,9 @@
  .speakers-all {
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin-top: 80px !important;
 }
 
 .fluid-container {

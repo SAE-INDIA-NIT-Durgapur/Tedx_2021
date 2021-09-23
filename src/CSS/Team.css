@@ -10,7 +10,7 @@
 .container-team {  
     justify-content: center;
     align-items: center;
-    background: #1b1b1b;
+    background: #0d0d0d;
 }
 
 .container-team {
@@ -27,7 +27,7 @@
 }
 
 .container-team .card {
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
     position: relative;
     width: 280px;
     height: 280px;

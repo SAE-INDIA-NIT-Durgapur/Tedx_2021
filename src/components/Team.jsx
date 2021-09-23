@@ -33,7 +33,7 @@ import ambika from '../images/profile_pics/ambikaneela.png'
 import arunava from '../images/profile_pics/arunava_sarkar.png'
 const TeamView = () => {
    return (
-       <>
+       <div style={{marginTop: "80px"}}>
        <h1 className="text-center heading-team" style={{color:"#FF2B06", paddingTop:"50px"}}>OUR TEAM
        <hr/></h1>
       <h1 className="text-center heading-team" style={{color:"#FF2B06", paddingTop:"50px", fontFamily:"Montserrat"}}>ORGANIZERS</h1>
@@ -672,7 +672,7 @@ const TeamView = () => {
       </div>
       </Slide>
       </div>
-    </>
+    </div>
    )
 }
 

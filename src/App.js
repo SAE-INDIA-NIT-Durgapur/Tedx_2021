@@ -11,12 +11,19 @@ import Sponsors from "./components/Sponsors"
 import Home from "./components/Home"
 import About from "./components/About"
 import Info from './components/Aboutus';
-import { Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router,  Switch, Route } from 'react-router-dom';
 import Countdown from './components/Countdown';
 import Team from './components/Team'
 import Register from './components/Register'
-
+import Sidebar from './components/Sidebar';
 function App() {
+
+  //toggling for mobile view
+    const[isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    };
 
   const defaultOptions = {
     loop: true,
@@ -57,7 +64,11 @@ function App() {
           </div>
           :
           <>
-            <Navbar />
+          <Router>
+            <Navbar toggle={toggle} />
+
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            
             <div className="App">
               <Switch>
 
@@ -93,9 +104,8 @@ function App() {
                 <Route exact path='/*' />
 
               </Switch>
-
             </div>
-
+            </Router>
 
           </>
       }

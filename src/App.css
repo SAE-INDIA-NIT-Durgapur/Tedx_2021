@@ -1,6 +1,6 @@
 /*no scroll-bar*/
 body {
-  /* background-color: #1b1b1b; */
+  /* background-color: #0d0d0d; */
   overflow-y: scroll;
   cursor: context-menu;
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
 
 
 .fluid-container-loader{
-  background-color: #1b1b1b;
+  background-color: #0d0d0d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,16 +32,16 @@ body {
 
 @keyframes fade {
   0%   {opacity: 0;
-  background-color: #1b1b1b;}
+  background-color: #0d0d0d;}
   50%  {opacity: 1;
-  background-color:#1b1b1b;}
+  background-color:#0d0d0d;}
   100% {opacity: 0;
-  background-color:#1b1b1b;}
+  background-color:#0d0d0d;}
 }
 
 footer {
   padding: 2rem 0;
-  background-color: #1b1b1b; 
+  background-color: #0d0d0d; 
 }
 
 

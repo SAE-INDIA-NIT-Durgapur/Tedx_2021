@@ -1,9 +1,10 @@
 .register-main {
-  background-color: #1b1b1b;
+  background-color: #0d0d0d;
+  margin-top: 80px !important;
 }
 
 .register{
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
     justify-content: center;
     align-items: center;
     height: 50vh;

@@ -8,30 +8,28 @@ import logo from "../images/tedxnitdgp.png"
 
 
 const Home = () => {
-   const [vantaEffect, setVantaEffect] = useState(0)
-    const myRef = useRef(null)
-    useEffect(() => {
-        if (!vantaEffect) {
-            setVantaEffect(BIRDS({
-                el: myRef.current,
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: 0x0
-            }))
-        }
-        return () => {
-            if (vantaEffect) vantaEffect.destroy()
-        }
-    }, [vantaEffect])
-
-
+    // const [vantaEffect, setVantaEffect] = useState(0)
+    // const myRef = useRef(null)
+    // useEffect(() => {
+    //     if (!vantaEffect) {
+    //         setVantaEffect(BIRDS({
+    //             el: myRef.current,
+    //             mouseControls: true,
+    //             touchControls: true,
+    //             gyroControls: false,
+    //             minHeight: 200.00,
+    //             minWidth: 200.00,
+    //             scale: 1.00,
+    //             scaleMobile: 1.00,
+    //             color: 0x0
+    //         }))
+    //     }
+    //     return () => {
+    //         if (vantaEffect) vantaEffect.destroy()
+    //     }
+    // }, [vantaEffect])
     return (
-        <div className="top-main" ref={myRef}>
+        <div className="top-main">
             <section className="home ">
                 <div className="container-fluid justify-content-center align-items-center">
                     <div className="row  vh-100  justify-content-center align-items-center" >

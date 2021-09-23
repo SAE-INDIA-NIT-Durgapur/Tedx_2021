@@ -1,7 +1,8 @@
  .sponsors {
     padding-top: 70px;
     padding-left: 40px; 
-    background-color: #1b1b1b;
+    background-color: #0d0d0d;
+    margin-top: 80px !important;
 }
 
 hr {
@@ -16,7 +17,7 @@ hr {
 .heading-sponsors{
     font-weight: 900;
     color: rgb(77, 77, 77);
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Roboto';
     margin-bottom: 10px;
 }
