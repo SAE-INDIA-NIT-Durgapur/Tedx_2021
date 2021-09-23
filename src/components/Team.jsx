@@ -2,35 +2,36 @@ import React from 'react'
 import '../CSS/Team.css'
 import Slide from 'react-reveal/Slide';
 import chetan from '../images/profile_pics/Chetan Gupta Grayscale.jpg'
-import vishesh from '../images/profile_pics/v vishesh.png'
+import vishesh from '../images/profile_pics/v vishesh.jpg'
 import shubham from '../images/profile_pics/subham_agarwall.png'
-import soumik from '../images/profile_pics/Soumik Hazra.png'
-import sukanya from '../images/profile_pics/sukanya_dutta.png'
-import anurag from '../images/profile_pics/anurag singh.png'
-import divas from '../images/profile_pics/Divas Gupta.png'
-import suryadip from '../images/profile_pics/suryadip mondal.png'
+import soumik from '../images/profile_pics/Soumik Hazra.jpg'
+import sukanya from '../images/profile_pics/sukanya_dutta.jpg'
+import anurag from '../images/profile_pics/anurag singh.jpg'
+import divas from '../images/profile_pics/Divas Gupta.jpg'
+import suryadip from '../images/profile_pics/suryadip mondal.jpg'
 import satyam from '../images/profile_pics/Satyam Shorya Grayscale.jpg'
-import hemanth from '../images/profile_pics/hemanth.png'
-import aniket from '../images/profile_pics/aniketpanigrahi.png'
-import abhishek from '../images/profile_pics/abhisekh_singh.png'
+import hemanth from '../images/profile_pics/hemanth.jpg'
+import aniket from '../images/profile_pics/aniketpanigrahi.jpg'
+import abhishek from '../images/profile_pics/abhisekh_singh.jpg'
 import rounak from '../images/profile_pics/Raunak Das Grayscale.jpg'
-import shubham_w from '../images/profile_pics/subham_gupta.png'
-import ankita from '../images/profile_pics/Ankita Mandal GrayScale.jpeg'
-import gaurav from '../images/profile_pics/kr. gaurav.png'
-import samriddho from '../images/profile_pics/samriddha_saha.png'
-import shubhangee from '../images/profile_pics/subhangee.png'
+import shubham_w from '../images/profile_pics/subham_gupta.jpg'
+import ankita from '../images/profile_pics/Ankita Mandal GrayScale.jpg'
+import gaurav from '../images/profile_pics/kr. gaurav.jpg'
+import samriddho from '../images/profile_pics/samriddha_saha.jpg'
+import shubhangee from '../images/profile_pics/subhangee.jpg'
 import ayush_kujur from '../images/profile_pics/Ayush Kujur Grayscale.jpg'
-import Ayush_t from '../images/profile_pics/Ayush Tiwari.png'
-import dyuti from '../images/profile_pics/Dyuti Mitra.png'
-import sammanita from '../images/profile_pics/Sammanita Singh.png'
-import vishal from '../images/profile_pics/vishal jaiswal.png'
-import sivaji from '../images/profile_pics/SIVAJI GANESH NAIDU.png'
-import anwesha from '../images/profile_pics/Anwesha Dan.png'
-import tilak from '../images/profile_pics/Tilak Raj.png'
-import jissu from '../images/profile_pics/jissnu_kundu.png'
-import anshika from '../images/profile_pics/anshikachoudhary.png'
-import ambika from '../images/profile_pics/ambikaneela.png'
-import arunava from '../images/profile_pics/arunava_sarkar.png'
+import Ayush_t from '../images/profile_pics/Ayush Tiwari.jpg'
+import dyuti from '../images/profile_pics/Dyuti Mitra.jpg'
+import sammanita from '../images/profile_pics/Sammanita Singh.jpg'
+import vishal from '../images/profile_pics/vishal jaiswal.jpg'
+import sivaji from '../images/profile_pics/SIVAJI GANESH NAIDU.jpg'
+import anwesha from '../images/profile_pics/Anwesha Dan.jpg'
+import tilak from '../images/profile_pics/Tilak Raj.jpg'
+import jissu from '../images/profile_pics/jissnu_kundu.jpg'
+import anshika from '../images/profile_pics/anshikachoudhary.jpg'
+import ambika from '../images/profile_pics/ambikaneela.jpg'
+import arunava from '../images/profile_pics/arunava_sarkar.jpg'
+import amit from '../images/profile_pics/amit tiwari.jpg'
 const TeamView = () => {
    return (
        <div style={{marginTop: "80px"}}>
@@ -211,7 +212,7 @@ const TeamView = () => {
        <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={amit}
             alt=""
           />
         </div>
@@ -451,7 +452,7 @@ const TeamView = () => {
         </div>
         <div className="content">
           <div className="contentBx">
-            <h3>Aniket <br /><span></span></h3>
+            <h3>Ankita <br /><span></span></h3>
           </div>
           <ul className="sci">
             <li>
