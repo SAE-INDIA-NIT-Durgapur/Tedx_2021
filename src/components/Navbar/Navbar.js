@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaBars} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import {
   Nav,
   NavLink,
@@ -15,48 +15,48 @@ import './Navbar.css'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
-  
+
   const changeNav = () => {
-    if(window.scrollY >= 80){
+    if (window.scrollY >= 80) {
       setScrollNav(true);
     } else {
-    setScrollNav(false);
-  }
-}; 
-useEffect(() => {
-  window.addEventListener('scroll', changeNav);
-}, []);
+      setScrollNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
 
   return (
     <Nav scrollNav={scrollNav}>
-    <NavbarConainer>
-      <NavLink to='/'>
-          <img src={logo} style={{ height: "35px", width: "100%", padding: "0!important" }} alt='logo' />
-       </NavLink>
+      <NavbarConainer>
+        <NavLink to='/'>
+          <img src={logo} className="nav_logo" style={{ height: "35px", width: "100%", padding: "0!important" }} alt='logo' />
+        </NavLink>
 
         <MobileIcon onClick={toggle}>
-        <FaBars />
+          <FaBars />
         </MobileIcon>
 
-          <NavMenu>
-           <NavLink to='/' activeStyle>
-             Home
-           </NavLink>
-           <NavLink to='/about' activeStyle>
-             About
-           </NavLink>
-           <NavLink to='/speakers' activeStyle>
-             Speakers
-           </NavLink>
-           <NavLink to='/team' activeStyle>
-             Team
-           </NavLink>
-           <NavLink to='/sponsors' activeStyle>
-             Sponsors
-           </NavLink>           
+        <NavMenu>
+          <NavLink to='/' activeStyle>
+            Home
+          </NavLink>
+          <NavLink to='/about' activeStyle>
+            About
+          </NavLink>
+          <NavLink to='/speakers' activeStyle>
+            Speakers
+          </NavLink>
+          <NavLink to='/team' activeStyle>
+            Team
+          </NavLink>
+          <NavLink to='/sponsors' activeStyle>
+            Sponsors
+          </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-          </NavMenu>
+        </NavMenu>
 
         <NavBtn>
           <NavBtnLink to='/register' >Register</NavBtnLink>

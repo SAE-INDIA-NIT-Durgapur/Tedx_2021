@@ -26,7 +26,7 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 order-sm-0 order-last">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  About<span className="jss244">NIT Durgapur</span>
+                  About <span className="jss244">NIT Durgapur?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
@@ -63,7 +63,7 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 order-sm-3">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  What is<span className="jss244"> TED</span>
+                  What is<span className="jss244"> TED?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
@@ -80,7 +80,7 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 order-sm-0 order-last">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  What is<span className="jss244"> TEDx</span>
+                  What is<span className="jss244"> TEDx?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
@@ -118,7 +118,7 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 ">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  What is<span className="jss244"> TEDxNITDurgapur</span>
+                  What is<span className="jss244"> TEDxNITDurgapur?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">

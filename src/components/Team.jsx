@@ -3,7 +3,7 @@ import '../CSS/Team.css'
 import Slide from 'react-reveal/Slide';
 import chetan from '../images/profile_pics/Chetan Gupta Grayscale.jpg'
 import vishesh from '../images/profile_pics/v vishesh.jpg'
-import shubham from '../images/profile_pics/subham_agarwall.png'
+import shubham from '../images/profile_pics/shubhambhaiya.jpg.jpg'
 import soumik from '../images/profile_pics/Soumik Hazra.jpg'
 import sukanya from '../images/profile_pics/sukanya_dutta.jpg'
 import anurag from '../images/profile_pics/anurag singh.jpg'
@@ -31,6 +31,7 @@ import anshika from '../images/profile_pics/anshikachoudhary.jpg'
 import ambika from '../images/profile_pics/ambikaneela.jpg'
 import arunava from '../images/profile_pics/arunava_sarkar.jpg'
 import amit from '../images/profile_pics/amit tiwari.jpg'
+import souptik from "../images/profile_pics/souptik.jpeg"
 const TeamView = () => {
   return (
     <div style={{ marginTop: "80px" }}>
@@ -49,7 +50,7 @@ const TeamView = () => {
             </div>
             <div className="content">
               <div className="contentBx">
-                <h3>Chetan Gupta <br /><span>Licensee</span></h3>
+                <h3>Chetan Gupta <br /><span>Organiser</span></h3>
               </div>
               <ul className="sci">
                 <li>
@@ -545,7 +546,26 @@ const TeamView = () => {
             </div>
           </div>
         </Slide>
-
+        <Slide to bottom>
+          <div className="card">
+            <div className="imgBx">
+              <img
+                src={souptik}
+                alt=""
+              />
+            </div>
+            <div className="content">
+              <div className="contentBx">
+                <h3>Souptik Das<br /><span></span></h3>
+              </div>
+              <ul className="sci">
+                <li>
+                  <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Slide>
         <Slide to bottom>
           <div className="card">
             <div className="imgBx">

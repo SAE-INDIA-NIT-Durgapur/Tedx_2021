@@ -11,7 +11,7 @@ import Sponsors from "./components/Sponsors"
 import Home from "./components/Home"
 import About from "./components/About"
 import Info from './components/Aboutus';
-import {BrowserRouter as Router,  Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Countdown from './components/Countdown';
 import Team from './components/Team'
 import Register from './components/Register'
@@ -19,11 +19,11 @@ import Sidebar from './components/Sidebar';
 function App() {
 
   //toggling for mobile view
-    const[isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    };
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  };
 
   const defaultOptions = {
     loop: true,
@@ -64,47 +64,47 @@ function App() {
           </div>
           :
           <>
-          <Router>
-            <Navbar toggle={toggle} />
+            <Router>
+              <Navbar toggle={toggle} />
 
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            
-            <div className="App">
-              <Switch>
+              <Sidebar isOpen={isOpen} toggle={toggle} />
 
-                <Route exact path="/" >
-                  <Home />
-                  <Footer data={`Shubham Agarwal-9038055767`} />
-                </Route>
-                <Route exact path="/about" >
-                  <Info />
-                  <Footer data={`Rounak Das-7478528990`} />
-                </Route>
+              <div className="App">
+                <Switch>
 
-                <Route exact path="/speakers" >
-                  <Speakers />
-                  <Footer data={`Soumik Hazra-74789 26623`} />
-                </Route>
+                  <Route exact path="/" >
+                    <Home />
+                    <Footer data={`Shubham Agarwal-9038055767`} />
+                  </Route>
+                  <Route exact path="/about" >
+                    <Info />
+                    <Footer data={`Rounak Das-7478528990`} />
+                  </Route>
 
-                <Route exact path="/sponsors" >
-                  <Sponsors />
-                  <Footer data={`Shubham Agarwal-9038055767`} />
-                </Route>
+                  <Route exact path="/speakers" >
+                    <Speakers />
+                    <Footer data={`V Vishesh-62942 74876`} />
+                  </Route>
 
-                <Route exact path="/team">
-                  <Team />
-                  <Footer data={`Chetan Gupta-9874700937`} />
-                </Route>
+                  <Route exact path="/sponsors" >
+                    <Sponsors />
+                    <Footer data={`Shubham Agarwal-9038055767`} />
+                  </Route>
 
-                <Route exact path="/register" >
-                  <Register />
-                  <Footer data={`Shubham Agarwal-9038055767`} />
-                </Route>
+                  <Route exact path="/team">
+                    <Team />
+                    <Footer data={`Chetan Gupta-9874700937`} />
+                  </Route>
 
-                <Route exact path='/*' />
+                  <Route exact path="/register" >
+                    <Register />
+                    <Footer data={`Shubham Agarwal-9038055767`} />
+                  </Route>
 
-              </Switch>
-            </div>
+                  <Route exact path='/*' />
+
+                </Switch>
+              </div>
             </Router>
 
           </>

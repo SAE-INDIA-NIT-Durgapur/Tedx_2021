@@ -8,26 +8,7 @@ import logo from "../images/tedxnitdgp.png"
 
 
 const Home = () => {
-    // const [vantaEffect, setVantaEffect] = useState(0)
-    // const myRef = useRef(null)
-    // useEffect(() => {
-    //     if (!vantaEffect) {
-    //         setVantaEffect(BIRDS({
-    //             el: myRef.current,
-    //             mouseControls: true,
-    //             touchControls: true,
-    //             gyroControls: false,
-    //             minHeight: 200.00,
-    //             minWidth: 200.00,
-    //             scale: 1.00,
-    //             scaleMobile: 1.00,
-    //             color: 0x0
-    //         }))
-    //     }
-    //     return () => {
-    //         if (vantaEffect) vantaEffect.destroy()
-    //     }
-    // }, [vantaEffect])
+
     return (
         <div className="top-main">
             <section className="home ">
@@ -41,13 +22,13 @@ const Home = () => {
                                 <br />
 
 
-                                <p
+                                {/* <p
                                     className="Coming_Soon">
                                     Coming soon...
-                                </p>
+                                </p> */}
 
 
-                                {/* <Countdown /> */}
+                                <Countdown />
                             </div>
                         </Slide>
                     </div>

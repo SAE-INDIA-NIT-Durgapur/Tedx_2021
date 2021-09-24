@@ -59,7 +59,7 @@ const Footer = (props) => {
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
                                         <h4>Mail us</h4>
-                                        <span>admin@TEDxNITDurgapur.com</span>
+                                        <span>admin@tedxnitdurgapur.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +73,7 @@ const Footer = (props) => {
                                         <a><img src={img} className="img-fluid" alt="logo" /></a>
                                     </div>
                                     <div className="footer-text">
-                                        {/* <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p> */}
+
                                     </div>
                                     <div className="footer-social-icon">
                                         <span>Follow us</span>
@@ -99,22 +98,7 @@ const Footer = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            {/* <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div className="footer-widget">
-                            <div className="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div className="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div className="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address"/>
-                                    <button><i className="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div> */}
+
                         </div>
                     </div>
 

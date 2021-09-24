@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   font-size: 1.2rem !important;
   top: 0;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 0.5rem calc((100vw - 1100px) / 2);
   z-index: 10;
 
   @media screen and (max-width: 960px){
@@ -120,21 +120,10 @@ export const NavBtnLink = styled(Link)`
   margin-left: 24px;
   font-family: 'Roboto';
   
-  ${'' /* &:after{
-    height: 100%;
-	left: -35%;
-	top: 0;
-	transform: skew(50deg);
-	transition-duration: 0.6s;
-	transform-origin: top left;
-	width: 0; 
-  } */}
+
 
   &:hover {
-      ${'' /* &:after{
-          height: 100%;
-          width: 135%;
-      } */}
+    
     transition: all 0.2s ease-in-out;
     background: #fff;
     box-shadow: ;
