@@ -1,0 +1,10 @@
+@media all and (max-width: 530px){
+.nav_logo img{
+    display: none !important;
+    margin: 0 auto !important;  
+  }
+}
+
+Nav{
+  background-color: #0d0d0d !important;
+}

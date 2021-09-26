@@ -8,14 +8,15 @@ const Sponsors = () => {
         <div className="container sponsors">
             <hr />
             <div className="heading-sponsors">
-                Why partner with <span>TEDx<pull>NITDurgapur</pull></span>?
-                {/* <img className="w-50" src={logo} alt="img" /> */}
+                Why partner with
+                <span> TED<sup>x</sup><pull>NITDurgapur?</pull></span>
+                {/* <img className="w-50" src={logo} style={{ height: "25%", width: "25%", marginLeft: "20px!important" }} alt="img" /> */}
             </div>
             <div className="content-sponsors">
                 <p>
-                    TEDxNITDurgapur being a prolific coalition, has a promising range of audiences from the domains of technology, innovation, research, sociology and humanities. This collaboration will have a vital impact on innumerable masses through its brand value and rage. This diverse network is easily accessible and hence attracts a considerable population. The additional upshot of the combo is its outstanding theme "Ideas Worth Sharing". As a cherry on top is the precise theme " The Beautiful Mind" which is as fabulous as it sounds.
+                    TED<sup>x</sup>NITDurgapur being a prolific coalition, has a promising range of audiences from the domains of technology, innovation, research, sociology and humanities. This collaboration will have a vital impact on innumerable masses through its brand value and rage. This diverse network is easily accessible and hence attracts a considerable population. The additional upshot of the combo is its outstanding theme "Ideas Worth Sharing". As a cherry on top is the precise theme " The Beautiful Mind" which is as fabulous as it sounds.
 
-                    The event not only surpasses the social standards but also wins an emotional aspect of the audience. TEDxNITDurgapur has its mention for acclaim on social media like Facebook, Instagram and YouTube. This professes tremendous reach to communities across the globe.
+                    The event not only surpasses the social standards but also wins an emotional aspect of the audience. TED<sup>x</sup>NITDurgapur has its mention for acclaim on social media like Facebook, Instagram and YouTube. This professes tremendous reach to communities across the globe.
 
                 </p>
                 <br />
@@ -25,7 +26,7 @@ const Sponsors = () => {
 
                         <p
                             className="Coming_Soon">
-                            Sponsors<br /> Coming soon
+                            Partners<br /> Coming soon
                         </p>
 
                     </div>

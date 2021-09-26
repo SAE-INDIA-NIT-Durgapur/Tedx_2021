@@ -4,8 +4,8 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Footer.css'
 import img from './tedxnitdgp.png'
-import { AiFillFacebook, AiFillInstagram, AiOutlineArrowUp } from "react-icons/ai"
-import { FaArrowCircleUp } from "react-icons/fa"
+import { AiFillFacebook, AiFillInstagram, AiOutlineArrowUp} from "react-icons/ai"
+import { FaArrowCircleUp, FaLinkedin } from "react-icons/fa"
 
 const Footer = (props) => {
     const [visible, setVisible] = useState(false)
@@ -59,6 +59,7 @@ const Footer = (props) => {
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
                                         <h4>Mail us</h4>
+                                        <span>communications@tedxnitdurgapur.com</span><br/>
                                         <span>admin@tedxnitdurgapur.com</span>
                                     </div>
                                 </div>
@@ -79,6 +80,7 @@ const Footer = (props) => {
                                         <span>Follow us</span>
                                         <a href="https://www.facebook.com/SAENITD/"><AiFillFacebook size={32} /></a>
                                         <a href="https://instagram.com/tedxnitdurgapur?utm_medium=copy_link"><AiFillInstagram size={32} /></a>
+                                        <a href="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/"><FaLinkedin size={32} /></a>
 
                                     </div>
                                 </div>
@@ -92,7 +94,7 @@ const Footer = (props) => {
                                         <li><NavLink to="/" exact>Home</NavLink></li>
                                         <li><NavLink to="/about" exact>About Us</NavLink></li>
                                         <li><NavLink to="/speakers" exact>Speakers</NavLink></li>
-                                        <li><NavLink to="/sponsors" exact>Sponsors</NavLink></li>
+                                        <li><NavLink to="/sponsors" exact>Partners</NavLink></li>
                                         <li><NavLink to="/team" exact>Team</NavLink></li>
                                         <li><NavLink to="/register" exact>Register</NavLink></li>
                                     </ul>

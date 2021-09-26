@@ -28,9 +28,9 @@ const Navbar = ({ toggle }) => {
   }, []);
 
   return (
-    <Nav scrollNav={scrollNav}>
+    <Nav>
       <NavbarConainer>
-        <NavLink to='/'>
+        <NavLink className="nav_logo" to='/'>
           <img src={logo} className="nav_logo" style={{ height: "35px", width: "100%", padding: "0!important" }} alt='logo' />
         </NavLink>
 
@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
             Team
           </NavLink>
           <NavLink to='/sponsors' activeStyle>
-            Sponsors
+            Partners
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

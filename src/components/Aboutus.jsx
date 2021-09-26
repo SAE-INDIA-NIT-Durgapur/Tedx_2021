@@ -26,7 +26,7 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 order-sm-0 order-last">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  About <span className="jss244">NIT Durgapur?</span>
+                  About <span className="jss244">NIT Durgapur ?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
@@ -80,12 +80,12 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 order-sm-0 order-last">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  What is<span className="jss244"> TEDx?</span>
+                  What is<span className="jss244"> TED<sup>x</sup>?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
 
-                  TEDx is an independently organized equivalent to its international counterpart, TED. Resonating with TED’s mission of researching and discovering “ideas worth spreading”, TEDx aims to provide a credible platform to an emerging pool of talent at the grassroots, subsequently sparking constructive discussions locally.
+                  TED<sup>x</sup> is an independently organized equivalent to its international counterpart, TED. Resonating with TED’s mission of researching and discovering “ideas worth spreading”, TED<sup>x</sup> aims to provide a credible platform to an emerging pool of talent at the grassroots, subsequently sparking constructive discussions locally.
 
                 </p>
                 <hr />
@@ -118,12 +118,12 @@ const Aboutus = () => {
             <Slide to bottom>
               <div className="col-md-8 ">
                 <h2 className="MuiTypography-root jss241 MuiTypography-h2">
-                  What is<span className="jss244"> TEDxNITDurgapur?</span>
+                  What is<span className="jss244"> TED<sup>x</sup>NITDurgapur?</span>
                 </h2>
                 <hr />
                 <p className="mb-0">
-                  TEDxNITDurgapur is an independently organized event under an official license granted by TED. An event which will provide a reputable platform to a diverse assemblage of voices from a plethora of spheres to propagate ingenious ideas and thoughts, consequently propelling rational thought and original thinking amongst the audience. Scheduled to be held on the 31st of October, TEDxNITDurgapur would feature a series of talks, focusing on the theme –“A Beautiful Mind”.
-                  Keeping in accordance with the precautionary measures owing to the raging pandemic, the event will be held on an online platform. Regardless of the circumstances, the team of TEDxNITDurgapur, reassures to deliver efficiently and ensures to conduct a riveting event, one that inspires and evokes prudent thought.
+                  TED<sup>x</sup>NITDurgapur is an independently organized event under an official license granted by TED. An event which will provide a reputable platform to a diverse assemblage of voices from a plethora of spheres to propagate ingenious ideas and thoughts, consequently propelling rational thought and original thinking amongst the audience. Scheduled to be held on the 31st of October, TED<sup>x</sup>NITDurgapur would feature a series of talks, focusing on the theme –“A Beautiful Mind”.
+                  Keeping in accordance with the precautionary measures owing to the raging pandemic, the event will be held on an online platform. Regardless of the circumstances, the team of TED<sup>x</sup>NITDurgapur, reassures to deliver efficiently and ensures to conduct a riveting event, one that inspires and evokes prudent thought.
 
                 </p>
                 <hr />

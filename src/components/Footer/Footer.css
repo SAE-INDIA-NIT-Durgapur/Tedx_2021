@@ -116,6 +116,11 @@ ul {
     margin-bottom: 12px;
 }
 
+.footer-widget ul li a{
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
 .footer-widget ul li a:hover {
     color: #e62b1e;
 }

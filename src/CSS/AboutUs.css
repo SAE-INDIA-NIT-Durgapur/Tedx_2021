@@ -23,10 +23,15 @@
     font-display: swap;
 }
 
+.col-md-4 img{
+    border-radius: 10px;
+}
+
 .jss244 {
     color: #FF2B06;
     font-size: 2.5rem;
 }
+
 @media (max-width:1295px){
     .jss244{
         font-size: 1.5rem;
