@@ -80,7 +80,7 @@ const Footer = (props) => {
                                         <span>Follow us</span>
                                         <a href="https://www.facebook.com/SAENITD/"><AiFillFacebook size={32} /></a>
                                         <a href="https://instagram.com/tedxnitdurgapur?utm_medium=copy_link"><AiFillInstagram size={32} /></a>
-                                        <a href="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/"><FaLinkedin size={32} /></a>
+                                        <a href="https://www.linkedin.com/company/tedxnitdurgapur/"><FaLinkedin size={32} /></a>
 
                                     </div>
                                 </div>
