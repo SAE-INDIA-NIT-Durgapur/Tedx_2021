@@ -155,7 +155,7 @@ const TeamView = () => {
             </div>
             <div className="content">
               <div className="contentBx">
-                <h3>Ambika Biswas Neela <br /><span>Assistant Director of Operations</span></h3>
+                <h3>Ambika Biswas Neela <br /><span>Associate Director of Operations</span></h3>
               </div>
               <ul className="sci">
                 <li>
@@ -302,7 +302,7 @@ const TeamView = () => {
             </div>
             <div className="content">
               <div className="contentBx">
-                <h3>Jissu <br /><span>Video & Production Lead</span></h3>
+                <h3>Jissnu <br /><span>Video & Production Lead</span></h3>
               </div>
               <ul className="sci">
                 <li>
