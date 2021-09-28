@@ -39,31 +39,34 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
+
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">  
                                     <div className="cta-text">
                                     <RiPhoneFindLine size={32} />
-                                    <br/><br/>
+                                    <br/>
                                         <h4>Find Us</h4>
                                         <span>Mahatma Gandhi Rd, A-Zone, Durgapur, West Bengal 713209</span>
                                     </div>
                                 </div>
                             </div>
+
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
                                     <div className="cta-text">
                                     <FiPhoneCall size={32} />
-                                    <br/><br/>
+                                    <br/>
                                         <h4>Call us</h4>
                                         <span>{props.data}</span>
                                     </div>
                                 </div>
                             </div>
+
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
                                     <div className="cta-text">
                                     <AiOutlineMail size={32} />
-                                    <br/><br/>
+                                    <br/>
                                         <h4>Mail us</h4>
                                         <span>communications@tedxnitdurgapur.com</span><br/>
                                         <span>admin@tedxnitdurgapur.com</span>
