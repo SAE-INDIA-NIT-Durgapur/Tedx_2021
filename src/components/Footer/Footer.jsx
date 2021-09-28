@@ -4,8 +4,11 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Footer.css'
 import img from './tedxnitdgp.png'
-import { AiFillFacebook, AiFillInstagram, AiOutlineArrowUp} from "react-icons/ai"
-import { FaArrowCircleUp, FaLinkedin } from "react-icons/fa"
+import { AiFillFacebook, AiOutlineMail, AiOutlineArrowUp} from "react-icons/ai"
+import { FaArrowCircleUp, FaLinkedin, FaInstagramSquare } from "react-icons/fa"
+import { RiPhoneFindLine } from "react-icons/ri";
+import { FiPhoneCall } from "react-icons/fi";
+import { BiMailSend } from "react-icons/bi"
 
 const Footer = (props) => {
     const [visible, setVisible] = useState(false)
@@ -37,9 +40,10 @@ const Footer = (props) => {
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
                             <div className="col-xl-4 col-md-4 mb-30">
-                                <div className="single-cta">
-                                    <i className="fas fa-map-marker-alt"></i>
+                                <div className="single-cta">  
                                     <div className="cta-text">
+                                    <RiPhoneFindLine size={32} />
+                                    <br/><br/>
                                         <h4>Find Us</h4>
                                         <span>Mahatma Gandhi Rd, A-Zone, Durgapur, West Bengal 713209</span>
                                     </div>
@@ -47,8 +51,9 @@ const Footer = (props) => {
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <i className="fas fa-phone"></i>
                                     <div className="cta-text">
+                                    <FiPhoneCall size={32} />
+                                    <br/><br/>
                                         <h4>Call us</h4>
                                         <span>{props.data}</span>
                                     </div>
@@ -56,8 +61,9 @@ const Footer = (props) => {
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
+                                    <AiOutlineMail size={32} />
+                                    <br/><br/>
                                         <h4>Mail us</h4>
                                         <span>communications@tedxnitdurgapur.com</span><br/>
                                         <span>admin@tedxnitdurgapur.com</span>
@@ -79,7 +85,7 @@ const Footer = (props) => {
                                     <div className="footer-social-icon">
                                         <span>Follow us</span>
                                         <a href="https://www.facebook.com/SAENITD/"><AiFillFacebook size={32} /></a>
-                                        <a href="https://instagram.com/tedxnitdurgapur?utm_medium=copy_link"><AiFillInstagram size={32} /></a>
+                                        <a href="https://instagram.com/tedxnitdurgapur?utm_medium=copy_link"><FaInstagramSquare size={32} /></a>
                                         <a href="https://www.linkedin.com/company/sae-india-nit-dgp-collegiate-chapter/mycompany/"><FaLinkedin size={32} /></a>
 
                                     </div>
