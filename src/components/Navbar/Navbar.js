@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
           <NavLink to='/team' activeStyle>
             Team
           </NavLink>
-          <NavLink to='/sponsors' activeStyle>
+          <NavLink to='/partners' activeStyle>
             Partners
           </NavLink>
           {/* Second Nav */}
