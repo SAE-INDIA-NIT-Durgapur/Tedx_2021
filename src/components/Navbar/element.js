@@ -101,8 +101,9 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
+  margin-top: 10px;  
   font-weight: 400;
-
+  height: 60px !important;
   @media screen and (max-width: 768px) {
     display: none;
   }
