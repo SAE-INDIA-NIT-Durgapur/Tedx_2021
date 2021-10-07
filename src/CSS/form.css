@@ -1,0 +1,68 @@
+h1 {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+.registration_form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: remy(32px);
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: remy(180px);
+}
+
+label {
+    color: #ffff;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    touch-action: manipulation;
+  }
+
+  input {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color:#ffff;
+  border: none;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #ff2b06;
+    background-color:#0000;
+  }
+
+.btn{
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  margin-top: 1.618rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #ff2b06;
+  border: 1px solid transparent;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover{
+    background-color: #ffff;
+    color: #ff2b06;
+}
