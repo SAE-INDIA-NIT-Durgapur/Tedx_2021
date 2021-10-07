@@ -30,7 +30,7 @@ const Aboutus = () => {
                 </h2>
                 <hr />
                 <p className="mb-0">
-                  Established in 1960, National Institute of Technology Durgapur is a premier engineering institute within the country, which since its inception has trained proficient engineers and leaders, whose achievements are awe inspiring. Our institute is home to a formidable talent pool, exhibiting remarkable skills in a multitude of domains. Ranked 29th for engineering and 6th ong NITs, according to the National Institutional Ranking Framework (NIRF), the excellence displayed by the institute in every academic year is a testament to its promising years ahead.
+                  Established in 1960, National Institute of Technology Durgapur is a premier engineering institute within the country, which since its inception has trained proficient engineers and leaders, whose achievements are awe inspiring. Our institute is home to a formidable talent pool, exhibiting remarkable skills in a multitude of domains. Ranked 29th for engineering and 6th among NITs, according to the National Institutional Ranking Framework (NIRF), the excellence displayed by the institute in every academic year is a testament to its promising years ahead.
 
                 </p>
                 <hr />
