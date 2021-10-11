@@ -1,4 +1,4 @@
-h1 {
+h1.form {
     color: #ffff;
     display: flex;
     justify-content: center;
@@ -27,6 +27,14 @@ label {
     font-size: 0.75rem;
     text-transform: uppercase;
     touch-action: manipulation;
+
+    /* display: block;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color:#ffff;
+  border: none; */
   }
 
   input {
@@ -39,10 +47,31 @@ label {
   border: none;
 }
 
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
 input[type=text] {
     border: none;
     border-bottom: 2px solid #ff2b06;
     background-color:#0000;
+  }
+
+  .required-field::before {
+    content: "*";
+    color: red;
+    float: right;
   }
 
 .btn{
