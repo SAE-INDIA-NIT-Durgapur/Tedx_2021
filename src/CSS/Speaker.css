@@ -50,6 +50,52 @@
     color: #FF2B06;
     font-size: 2 rem;
 }
+
+.Coming_Soon {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-left: -30px;
+  }
+@media (max-width:500px)
+{
+  .Coming_Soon{
+    font-size:1.5em;
+  }
+}
+
+  @keyframes animate {
+      0% {
+          background-position: -500%;
+      }
+
+      25% {
+          background-position: -250%;
+      }
+
+      50% {
+          background-position: 0%;
+      }
+
+      75% {
+          background-position: 250%;
+      }
+
+      100% {
+          background-position: 500%;
+      }
+  }
+
+  *
 /* .contain-1{
     font-size: 50px;
    

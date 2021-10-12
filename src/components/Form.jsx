@@ -50,10 +50,11 @@ const Form =() => {
     }
     return(
         <>
-            <form onSubmit={handleSubmit}>
-                <h1 className="form">Registration Form</h1>
+        <h1 className="form">Registration Form</h1>
+            <form className="container-form" onSubmit={handleSubmit}>
+                
 
-                <div className=" container">
+                <div className="container">
                     <div className="required-field">
                         <label htmlFor="name"></label>
                         <input
