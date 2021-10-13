@@ -21,6 +21,16 @@ const PTable = () => {
           </tr>
         </tbody>
       </table>
+      <h2
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontSize: "1.2rem",
+          color: "rgb(207, 198, 198)",
+        }}
+      >
+        Note: T-Shirt price inclusive of shipping
+      </h2>
     </div>
   );
 };

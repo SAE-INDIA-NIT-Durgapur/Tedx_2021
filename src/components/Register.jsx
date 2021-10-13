@@ -8,7 +8,7 @@ import SizeTable from "./SizeTable";
 const Register = () => {
   return (
     <div className="fluid-container register-main">
-      <div className="row container register">
+      <div className="row register">
         {/* <img className="image_register" src={logo}/> */}
         <br />
         <br />
@@ -20,14 +20,12 @@ const Register = () => {
                 </p> */}
         {/* <PTable/>
          */}
-        <div class="container">
-          <div class="row" style={{ width: "100%", margin: 0 }}>
-            <div class="col">
-              <SizeTable />
-            </div>
-            <div class="col">
-              <PTable />
-            </div>
+        <div class="row" style={{ width: "100%", margin: 0 }}>
+          <div class="col">
+            <SizeTable />
+          </div>
+          <div class="col">
+            <PTable />
           </div>
         </div>
 

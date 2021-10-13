@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class SizeTable extends Component {
   render() {
     return (
-      <div class="container">
+      <div>
         <h4
           style={{ marginBottom: "20px", color: "white", textAlign: "center" }}
         >
