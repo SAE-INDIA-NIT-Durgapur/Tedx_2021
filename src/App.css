@@ -21,6 +21,21 @@ body {
 /* no scroll bar ended*/
 
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #0d0d0d;
+  background: #ff2b06;
+  font-weight: bold;
+}
+
+::selection {
+  color: #0d0d0d;
+  background: #ff2b06;
+  font-weight: bold;
+}
+
+
+
 .fluid-container-loader{
   background-color: #0d0d0d;
   display: flex;

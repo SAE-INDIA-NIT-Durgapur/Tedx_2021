@@ -37,7 +37,11 @@ label {
   border: none; */
   }
 
-  input {
+.container-form{
+  max-width: 600px !important;
+}
+
+input {
   display: block;
   padding: 0.5rem 0.75rem;
   width: 100%;
@@ -47,15 +51,18 @@ label {
   border: none;
 }
 
-
+input:focus{
+  outline: none !important;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
-  opacity: 1; /* Firefox */
+  opacity: 0.3; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #fff;
+  opacity: 0.3;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
@@ -65,6 +72,7 @@ label {
 input[type=text] {
     border: none;
     border-bottom: 2px solid #ff2b06;
+    border-left: 2px solid #ff2b06;
     background-color:#0000;
   }
 
@@ -74,8 +82,7 @@ input[type=text] {
     float: right;
   }
 
-.btn{
-  display: inline-block;
+.container-form .btn{
   padding: 0.75rem 1rem;
   margin-top: 1.618rem;
   font-weight: 400;

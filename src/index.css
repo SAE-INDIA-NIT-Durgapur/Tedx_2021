@@ -8,3 +8,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #0d0d0d;
+  background: #ff2b06;
+}
+
+::selection {
+  color: #0d0d0d;
+  background: #ff2b06;
+}
