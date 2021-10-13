@@ -32,6 +32,10 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SideBtnWrap>
                 <SidebarRoute to='/register'  onClick={toggle}>Register</SidebarRoute>
             </SideBtnWrap>
+            <br/>
+            <SideBtnWrap>
+                <SidebarRoute to='/merchandise'  onClick={toggle}>Merchandise</SidebarRoute>
+            </SideBtnWrap>
         </SidebarWrapper>
     </SidebarConatainer>
     );
