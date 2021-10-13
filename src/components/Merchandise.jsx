@@ -1,13 +1,14 @@
 import React,{useState} from 'react'
 import '../CSS/form.css'
+import tshirt1 from "../images/merchandise/tshirt...1.jpg"
+import tshirt2 from "../images/merchandise/tshirt...2.jpg"
+import tshirt3 from "../images/merchandise/tshirt...3.jpeg"
 
 
 const Merchandise =() => {
 
     const values = {
         name:"",
-        age:"",
-        gender:"",
         address:"",
         city:"",
         state:"",
@@ -26,7 +27,7 @@ const Merchandise =() => {
         // phone:"",
     });
 
-    const {name,age,gender,address,city,state,country,email,phone,college,collegeyear,tshirtsize} =initialState;
+    const {name,address,city,state,country,email,phone,college,collegeyear,tshirtsize} =initialState;
 
     const handleChange = e => {
         setState({...initialState, [e.target.name]: e.target.value})
@@ -40,11 +41,11 @@ const Merchandise =() => {
                 'https://v1.nocodeapi.com/ishangupta614/google_sheets/ADXXBwONRePqTxpu?tabId=Sheet1',{
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'} ,
-                    body: JSON.stringify([[name,age,gender,address,city,state,country,email,phone,college,collegeyear,tshirtsize]])
+                    body: JSON.stringify([[name,address,city,state,country,email,phone,college,collegeyear,tshirtsize]])
             }
             );
             await response.json();
-            setState({...initialState, name: "",age: "",gender: "",address: "",city: "",state: "",country: "",email: "",phone: "",college: "",collegeyear: "",tshirtsize: ""});
+            setState({...initialState, name: "",address: "",city: "",state: "",country: "",email: "",phone: "",college: "",collegeyear: "",tshirtsize: ""});
             alert("Thank You!" )
         } catch (err){
             console.log(err)
