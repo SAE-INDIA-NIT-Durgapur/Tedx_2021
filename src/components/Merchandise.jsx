@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../CSS/form.css";
-import tshirt1 from "../images/merchandise/tshirt...1.jpg";
-import tshirt2 from "../images/merchandise/tshirt...2.jpg";
-import tshirt3 from "../images/merchandise/tshirt...3.jpeg";
 
-import SizeTable from "./SizeTable";
+import Tables from "./Tables";
+
 import { useHistory } from "react-router-dom";
 
 const Merchandise = (props) => {
@@ -95,31 +93,8 @@ const Merchandise = (props) => {
   return (
     <>
       {/* <h1 className="form">Order Now!</h1> */}
-      <div class="containter row">
-        <div class="container col-md-6">
-          <div class="shirt-wrapper">
-            <img src={tshirt2} className="merchandise_img" />
-          </div>
-          <SizeTable />
-          <h2
-            style={{
-              color: "white",
-              textAlign: "center",
-              fontSize: "1.2rem",
-              color: "rgb(207, 198, 198)",
-            }}
-          >
-            Note: All measurements are in inches
-          </h2>
-        </div>
-        <div class="container col-md-6">
-          {/* <img src={tshirt3} className="merchandise_img"/> */}
-          <div class="shirt-wrapper">
-            <img src={tshirt1} className="merchandise_img" />
-          </div>
-          <SizeTable />
-        </div>
-      </div>
+
+      <Tables />
       {/* <form onSubmit={handleSubmit}> */}
       <h1 className="form">Order Now!</h1>
 

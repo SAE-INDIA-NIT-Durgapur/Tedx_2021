@@ -3,24 +3,26 @@
   margin-top: 80px !important;
 }
 
-.register{
-    background-color: #0d0d0d;
-    justify-content: center;
-    align-items: center;
-    /* height: 50vh; */
+.register {
+  background-color: #0d0d0d;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
 }
 
-.image_register{ 
+.image_register {
   padding: 10px;
   width: 50%;
   min-width: 375px;
-} 
-.table{
-  width: 30vw;
+}
+.ptable {
+  /* width: 40vw; */
+  text-align: center;
   color: rgb(235, 235, 235);
   font-size: 14px;
 }
-.table .th{
+
+.table .th {
   background: none;
 }
 /* .Coming_Soon {

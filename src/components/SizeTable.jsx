@@ -4,6 +4,12 @@ class SizeTable extends Component {
   render() {
     return (
       <div class="container size-table">
+        <h4
+          style={{ marginBottom: "20px", color: "white", textAlign: "center" }}
+        >
+          Size Chart
+        </h4>
+
         <table class="table">
           <thead>
             <tr>
@@ -57,6 +63,16 @@ class SizeTable extends Component {
             </tr>
           </tbody>
         </table>
+        <h2
+          style={{
+            color: "white",
+            textAlign: "center",
+            fontSize: "1.2rem",
+            color: "rgb(207, 198, 198)",
+          }}
+        >
+          Note: All measurements are in inches
+        </h2>
       </div>
     );
   }
