@@ -106,6 +106,7 @@ const Footer = (props) => {
                                         <li><NavLink to="/sponsors" exact>Partners</NavLink></li>
                                         <li><NavLink to="/team" exact>Team</NavLink></li>
                                         <li><NavLink to="/register" exact>Register</NavLink></li>
+                                        <li><NavLink to="/register" exact>Merchandise</NavLink></li>
                                     </ul>
                                 </div>
                             </div>

@@ -53,9 +53,12 @@ const Merchandise =() => {
     }
     return(
         <>
-        <h1 className="form">Order Now!</h1>
+        {/* <h1 className="form">Order Now!</h1> */}
+        <img src={tshirt2} className="merchandise_img"/>
+        <img src={tshirt3} className="merchandise_img"/>
+        <img src={tshirt1} className="merchandise_img"/>
             <form onSubmit={handleSubmit}>
-                <h1 className="form">Order Now!</h1>
+            <h1 className="form">Order Now!</h1>
                 
                 <div className="container register container-form">
                     <div className="required-field">

@@ -102,3 +102,43 @@ input[type=text] {
     background-color: #ffff;
     color: #ff2b06;
 }
+
+
+.merchandise_img{
+  margin-top: 100px;
+  margin-left: 55px;
+  margin-right: 50px;
+  width: 26%;
+}
+
+@media only screen and (max-device-width: 1400px){
+  .merchandise_img{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width: 800px){
+  .merchandise_img{
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width: 400px){
+  .merchandise_img{
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width: 300px){
+  .merchandise_img{
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 90%;
+  }
+}
