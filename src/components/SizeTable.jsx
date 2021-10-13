@@ -3,14 +3,14 @@ import React, { Component } from "react";
 class SizeTable extends Component {
   render() {
     return (
-      <div class="container size-table">
+      <div class="container">
         <h4
           style={{ marginBottom: "20px", color: "white", textAlign: "center" }}
         >
           Size Chart
         </h4>
 
-        <table class="table">
+        <table class="table table-dark border-danger table-bordered size-table">
           <thead>
             <tr>
               <th scope="col">Size</th>
@@ -55,7 +55,7 @@ class SizeTable extends Component {
               <td>9''</td>
             </tr>
 
-            <tr>
+            <tr style={{ borderBottom: "1px solid red" }}>
               <td scope="row">3XL</td>
               <td>48''</td>
               <td>31''</td>

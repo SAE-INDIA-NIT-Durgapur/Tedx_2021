@@ -14,6 +14,7 @@ const Form = () => {
     phone: "",
     college: "",
     collegeyear: "",
+    ticket: "",
   };
   const [initialState, setState] = useState(values);
   const [data, setData] = useState({
@@ -34,6 +35,7 @@ const Form = () => {
     phone,
     college,
     collegeyear,
+    ticket,
   } = initialState;
 
   const handleChange = (e) => {
@@ -42,6 +44,8 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    console.log(initialState);
 
     try {
       const response = await fetch(
@@ -61,6 +65,7 @@ const Form = () => {
               phone,
               college,
               collegeyear,
+              ticket,
             ],
           ]),
         }
@@ -78,6 +83,7 @@ const Form = () => {
         phone: "",
         college: "",
         collegeyear: "",
+        ticket: "",
       });
       alert("Thank You!");
     } catch (err) {
@@ -220,13 +226,33 @@ const Form = () => {
             />
           </div>
 
-          <div style={{backgroundColor:"#0D0D0D"}} class="required-field">
-          <label htmlFor="items"></label>
-            <select style={{backgroundColor:"#0D0D0D", boxShadow:"none", borderRadius:"0", borderBottom:"2px solid red",borderLeft:"2px solid red", display: "block", padding: "0.5rem 0.75rem", width: "100%", fontSize: "1rem", lineHeight: "1.25", color:"#ffff",  border: "none"}} class="form-select" id="inputGroupSelect01">
+          <div style={{ backgroundColor: "#0D0D0D" }} class="required-field">
+            <label htmlFor="items"></label>
+            <select
+              style={{
+                backgroundColor: "#0D0D0D",
+                boxShadow: "none",
+                borderRadius: "0",
+                borderBottom: "2px solid red",
+                borderLeft: "2px solid red",
+                borderTop: "none",
+                borderRight: "none",
+                display: "block",
+                padding: "0.5rem 0.75rem",
+                width: "100%",
+                fontSize: "1rem",
+                lineHeight: "1.25",
+                color: "#ffff",
+              }}
+              className="form-select"
+              id="inputGroupSelect01"
+              onChange={handleChange}
+              name="ticket"
+            >
               <option selected>Purchase Item</option>
-              <option value="1">Ticket</option>
-              <option value="2">T-Shirt</option>
-              <option value="3">Ticket + T-Shirt</option>
+              <option value="Ticket">Ticket</option>
+              <option value="T-Shirt">T-Shirt</option>
+              <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
             </select>
           </div>
 
