@@ -15,7 +15,14 @@
   width: 50%;
   min-width: 375px;
 } 
-
+.table{
+  width: 30vw;
+  color: rgb(235, 235, 235);
+  font-size: 14px;
+}
+.table .th{
+  background: none;
+}
 /* .Coming_Soon {
     font-family: "Roboto";
     text-transform: uppercase;
