@@ -54,6 +54,7 @@ const Navbar = ({ toggle }) => {
           <NavLink to='/partners' activeStyle>
             Partners
           </NavLink>
+          
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
@@ -61,9 +62,9 @@ const Navbar = ({ toggle }) => {
         <NavBtn>
           <NavBtnLink to='/register' >Register</NavBtnLink>
         </NavBtn>
-        {/* <NavBtn>
-          <NavBtnLink to='/mercandise' >Merchandise</NavBtnLink>
-        </NavBtn> */}
+        <NavBtn>
+          <NavBtnLink to='/merchandise' >Merchandise</NavBtnLink>
+        </NavBtn>
       </NavbarConainer>
     </Nav>
   )

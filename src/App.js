@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Countdown from './components/Countdown';
 import Team from './components/Team'
 import Register from './components/Register'
+import Merchandise from './components/Merchandise'
 import Sidebar from './components/Sidebar';
 function App() {
 
@@ -100,6 +101,13 @@ function App() {
                     <Register />
                     <Footer data={`Shubham Agarwal-9038055767`} />
                   </Route>
+
+                  <Route exact path="/merchandise" >
+                    <Merchandise />
+                    <Footer data={`Shubham Agarwal-9038055767`} />
+                  </Route>
+
+
 
                   <Route exact path='/*' />
 
