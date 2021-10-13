@@ -16,12 +16,13 @@
   min-width: 375px;
 } 
 .table{
-  width: 30vw;
+  width: 37vw;
   color: rgb(235, 235, 235);
   font-size: 14px;
 }
-.table .th{
-  background: none;
+
+.table>:not(:first-child) {
+border-top: none;
 }
 /* .Coming_Soon {
     font-family: "Roboto";
@@ -37,17 +38,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     margin-left: -30px;
-  }
-@media (max-width:500px)
+  } */
+@media (max-width:800px)
 {
-  .Coming_Soon{
-    font-size:1.5em;
-  }
+  .table{
+  width: 90vw;
+  font-size: 12px;
+}
 }
  
   
   
-  @keyframes animate {
+  /* @keyframes animate {
     0% {
       background-position: -500%;
     }

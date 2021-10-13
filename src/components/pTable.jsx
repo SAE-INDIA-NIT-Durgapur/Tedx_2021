@@ -19,9 +19,9 @@ const PTable = () => {
           <td>INR 299</td>
           <td>INR 349</td>
         </tr>
-        
       </tbody>
     </table>
+    <p className="tabel" >Note: All prices include shipping charges</p>
       </div>
    
   );

@@ -222,7 +222,7 @@ const Form = () => {
 
           <div style={{backgroundColor:"#0D0D0D"}} class="required-field">
           <label htmlFor="items"></label>
-            <select style={{backgroundColor:"#0D0D0D", boxShadow:"none", borderRadius:"0", borderBottom:"2px solid red",borderLeft:"2px solid red", display: "block", padding: "0.5rem 0.75rem", width: "100%", fontSize: "1rem", lineHeight: "1.25", color:"#ffff",  border: "none"}} class="form-select" id="inputGroupSelect01">
+            <select style={{backgroundColor:"#0D0D0D", boxShadow:"none", borderRadius:"0", borderBottom:"2px solid red", borderLeft:"2px solid red",borderTop:"none", borderRight:"none", display: "block", padding: "0.5rem 0.75rem", width: "100%", fontSize: "1rem", lineHeight: "1.25", color:"#ffff",}} className="form-select" id="inputGroupSelect01">
               <option selected>Purchase Item</option>
               <option value="1">Ticket</option>
               <option value="2">T-Shirt</option>
