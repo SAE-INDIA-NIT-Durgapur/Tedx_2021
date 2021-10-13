@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import '../CSS/form.css'
 
+
 const Merchandise =() => {
 
     const values = {
@@ -55,7 +56,7 @@ const Merchandise =() => {
             <form onSubmit={handleSubmit}>
                 <h1 className="form">Order Now!</h1>
                 
-                <div className="container ">
+                <div className="container register container-form">
                     <div className="required-field">
                         <label htmlFor="name"></label>
                         <input
