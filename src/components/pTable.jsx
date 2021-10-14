@@ -3,7 +3,7 @@ import "../CSS/register.css";
 
 const PTable = () => {
   return (
-    <div className="ptable table">
+    <div className="ptable table price-table">
       <h4 style={{ marginBottom: "20px" }}>Price Guide</h4>
       <table className="table table-dark border-danger table-bordered">
         <thead>
