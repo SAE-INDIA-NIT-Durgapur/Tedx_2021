@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { FaBars } from 'react-icons/fa'
+import React, { useEffect, useState } from "react";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavLink,
@@ -7,14 +7,14 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
-  NavbarConainer
-} from './element.js';
+  NavbarConainer,
+} from "./element.js";
 // import $ from 'jquery';
-import logo from '../../images/tedxnitdgp.png'
-import './Navbar.css'
+import logo from "../../images/tedxnitdgp.png";
+import "./Navbar.css";
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false)
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -23,15 +23,21 @@ const Navbar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
+
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    window.addEventListener("scroll", changeNav);
   }, []);
 
   return (
     <Nav>
       <NavbarConainer>
-        <NavLink className="nav_logo" to='/'>
-          <img src={logo} className="nav_logo" style={{ height: "35px", width: "100%", padding: "0!important" }} alt='logo' />
+        <NavLink className="nav_logo" to="/">
+          <img
+            src={logo}
+            className="nav_logo"
+            style={{ height: "35px", width: "100%", padding: "0!important" }}
+            alt="logo"
+          />
         </NavLink>
 
         <MobileIcon onClick={toggle}>
@@ -39,34 +45,37 @@ const Navbar = ({ toggle }) => {
         </MobileIcon>
 
         <NavMenu>
-          <NavLink to='/' activeStyle>
+          <NavLink exact to="/" activeStyle>
             Home
           </NavLink>
-          <NavLink to='/about' activeStyle>
+          <NavLink to="/about" activeStyle>
             About
           </NavLink>
-          <NavLink to='/speakers' activeStyle>
+          <NavLink to="/speakers" activeStyle>
             Speakers
           </NavLink>
-          <NavLink to='/team' activeStyle>
+          <NavLink to="/team" activeStyle>
             Team
           </NavLink>
-          <NavLink to='/partners' activeStyle>
+          <NavLink to="/partners" activeStyle>
             Partners
           </NavLink>
-          
+          {/* <NavLink to="/merchandise" activeStyle>
+            Merchandise
+          </NavLink> */}
+
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
 
+
+
         {/* <NavBtn>
-          <NavBtnLink to='/register' >Register</NavBtnLink>
-        </NavBtn>
-        <NavBtn>
-          <NavBtnLink to='/merchandise' >Merchandise</NavBtnLink>
+          <NavBtnLink to="/register">Register</NavBtnLink>
         </NavBtn> */}
+
       </NavbarConainer>
     </Nav>
-  )
-}
+  );
+};
 export default Navbar;
