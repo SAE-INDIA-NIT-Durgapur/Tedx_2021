@@ -45,7 +45,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(initialState);
+    // console.log(initialState);
 
     try {
       const response = await fetch(
@@ -85,7 +85,11 @@ const Form = () => {
         collegeyear: "",
         ticket: "",
       });
-      alert("Thank You!");
+
+      // alert(
+      //   "Thank you for your order! We will reach out to you with further details soon!"
+      // );
+      // console.log("Thanks");
     } catch (err) {
       console.log(err);
     }
@@ -256,9 +260,55 @@ const Form = () => {
             </select>
           </div>
 
-          <div>
-            <input className="btn" type="submit" value="Register" />
+          {/* <!-- Button trigger modal --> */}
+          <button
+            class="btn btn-block"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+            type="submit"
+            value="Register"
+          >
+            Order
+          </button>
+
+          {/* <!-- Modal --> */}
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div
+                class="modal-content"
+                style={{ backgroundColor: "rgb(255 255 255 / 91%)" }}
+              >
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Order Processing....
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style={{ textAlign: "center" }}>
+                  Thank you for your order! We will reach out to you with
+                  further details very soon!
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/* <div>
+            <input className="btn" type="submit" value="Register" />
+          </div> */}
         </div>
       </form>
     </>
