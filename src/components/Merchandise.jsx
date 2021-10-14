@@ -5,6 +5,7 @@ import tshirt2 from "../images/merchandise/tshirt...2.jpg"
 import tshirt3 from "../images/merchandise/tshirt...3.jpeg"
 
 
+
 const Merchandise =() => {
 
     const values = {
@@ -209,6 +210,8 @@ const Merchandise =() => {
                     <div>
                         <input className="btn" type="submit" value="Order"/>
                     </div>
+
+                   
                 </div>
             </form>
         </>

@@ -59,12 +59,12 @@ const Navbar = ({ toggle }) => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
 
-        <NavBtn>
+        {/* <NavBtn>
           <NavBtnLink to='/register' >Register</NavBtnLink>
         </NavBtn>
         <NavBtn>
           <NavBtnLink to='/merchandise' >Merchandise</NavBtnLink>
-        </NavBtn>
+        </NavBtn> */}
       </NavbarConainer>
     </Nav>
   )
