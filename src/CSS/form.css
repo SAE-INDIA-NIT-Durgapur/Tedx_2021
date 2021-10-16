@@ -109,14 +109,14 @@ input[type="text"] {
   margin-left: 55px;
   margin-right: 50px;
   margin-bottom: 20px;
-  width: 70%;
+  width: 80%;
 }
 
 @media only screen and (max-device-width: 1400px) {
   .merchandise_img {
     margin-left: 40px;
     margin-right: 40px;
-    width: 80%;
+    width: 90%;
   }
 }
 

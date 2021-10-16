@@ -60,9 +60,13 @@ const Footer = (props) => {
                     <AiOutlineMail size={32} />
                     <br />
                     <h4>Mail us</h4>
-                    <span>communications@tedxnitdurgapur.com</span>
+                    <span className="footer-email">
+                      communications@tedxnitdurgapur.com
+                    </span>
                     <br />
-                    <span>admin@tedxnitdurgapur.com</span>
+                    <span className="footer-email">
+                      admin@tedxnitdurgapur.com
+                    </span>
                   </div>
                 </div>
               </div>
