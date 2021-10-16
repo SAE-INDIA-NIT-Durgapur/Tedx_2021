@@ -140,7 +140,7 @@ const Footer = (props) => {
                         Team
                       </NavLink>
                     </li>
-                    {/* <li>
+                    <li>
                       <NavLink to="/register" exact>
                         Register
                       </NavLink>
@@ -149,7 +149,7 @@ const Footer = (props) => {
                       <NavLink to="/register" exact>
                         Merchandise
                       </NavLink>
-                    </li> */}
+                    </li> 
                   </ul>
                 </div>
               </div>
