@@ -268,7 +268,7 @@ const Form = () => {
             type="submit"
             value="Register"
           >
-            Order
+            Register
           </button>
 
           {/* <!-- Modal --> */}
