@@ -60,19 +60,19 @@ const Navbar = ({ toggle }) => {
           <NavLink to="/partners" activeStyle>
             Partners
           </NavLink>
-          {/* <NavLink to="/merchandise" activeStyle>
+           <NavLink to="/merchandise" activeStyle>
             Merchandise
-          </NavLink> */}
+          </NavLink> 
 
           {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+          <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> 
         </NavMenu>
 
 
 
-        {/* <NavBtn>
+         <NavBtn>
           <NavBtnLink to="/register">Register</NavBtnLink>
-        </NavBtn> */}
+        </NavBtn> 
 
       </NavbarConainer>
     </Nav>
