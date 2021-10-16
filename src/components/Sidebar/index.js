@@ -28,15 +28,16 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarLink to='/partners'  onClick={toggle}>
                     Partners
                 </SidebarLink>
-                <SidebarLink to='/merchandise'  onClick={toggle}>
+                {/* <SidebarLink to='/merchandise'  onClick={toggle}>
                     Merchandise
-                </SidebarLink>
+                </SidebarLink> */}
 
             </SidebarMenu>
-            <SideBtnWrap>
+             {/* <SideBtnWrap>
                 <SidebarRoute to='/register'  onClick={toggle}>Register</SidebarRoute>
-            </SideBtnWrap>
+            </SideBtnWrap> */}
             <br/>
+
         </SidebarWrapper>
     </SidebarConatainer>
     );

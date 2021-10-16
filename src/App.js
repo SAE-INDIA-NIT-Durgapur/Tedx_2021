@@ -97,7 +97,7 @@ function App() {
                     <Footer data={`Chetan Gupta-9874700937`} />
                   </Route>
 
-                  <Route exact path="/register" >
+                  {/* <Route exact path="/register" >
                     <Register />
                     <Footer data={`Shubham Agarwal-9038055767`} />
                   </Route>
@@ -105,7 +105,7 @@ function App() {
                   <Route exact path="/merchandise" >
                     <Merchandise />
                     <Footer data={`Shubham Agarwal-9038055767`} />
-                  </Route>
+                  </Route> */}
 
 
 
