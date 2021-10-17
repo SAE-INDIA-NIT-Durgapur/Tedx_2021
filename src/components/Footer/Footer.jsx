@@ -31,6 +31,7 @@ const Footer = (props) => {
       behavior: "smooth",
       /* you can also use 'auto' behaviour
                in place of 'smooth' */
+
     });
   };
 
@@ -51,6 +52,7 @@ const Footer = (props) => {
                       Mahatma Gandhi Rd, A-Zone, Durgapur, West Bengal 713209
                     </span>
                   </div>
+
                 </div>
               </div>
 
@@ -147,7 +149,7 @@ const Footer = (props) => {
                       <NavLink to="/register" exact>
                         Merchandise
                       </NavLink>
-                    </li>
+                    </li> 
                   </ul>
                 </div>
               </div>
