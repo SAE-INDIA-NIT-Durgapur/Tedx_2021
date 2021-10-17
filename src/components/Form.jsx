@@ -10,6 +10,7 @@ const Form = () => {
     city: "",
     state: "",
     country: "",
+    pincode: "",
     email: "",
     phone: "",
     college: "",
@@ -31,6 +32,7 @@ const Form = () => {
     city,
     state,
     country,
+    pincode,
     email,
     phone,
     college,
@@ -43,6 +45,7 @@ const Form = () => {
   };
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
 
     // console.log(initialState);
@@ -61,6 +64,7 @@ const Form = () => {
               city,
               state,
               country,
+              pincode,
               email,
               phone,
               college,
@@ -79,6 +83,7 @@ const Form = () => {
         city: "",
         state: "",
         country: "",
+        pincode: "",
         email: "",
         phone: "",
         college: "",
@@ -108,6 +113,7 @@ const Form = () => {
               autoComplete="off"
               value={name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="required-field">
@@ -119,6 +125,7 @@ const Form = () => {
               autoComplete="off"
               value={age}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -143,6 +150,7 @@ const Form = () => {
               autoComplete="off"
               value={address}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -155,6 +163,7 @@ const Form = () => {
               autoComplete="off"
               value={city}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -167,6 +176,7 @@ const Form = () => {
               autoComplete="off"
               value={state}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -179,6 +189,20 @@ const Form = () => {
               autoComplete="off"
               value={country}
               onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="required-field">
+            <label htmlFor="pincode"></label>
+            <input
+              placeholder="Pin Code"
+              type="text"
+              name="pincode"
+              autoComplete="off"
+              value={pincode}
+              onChange={handleChange}
+              required
             />
           </div>
 
@@ -191,6 +215,7 @@ const Form = () => {
               autoComplete="off"
               value={email}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -203,6 +228,7 @@ const Form = () => {
               autoComplete="off"
               value={phone}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -215,6 +241,7 @@ const Form = () => {
               autoComplete="off"
               value={college}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -227,6 +254,7 @@ const Form = () => {
               autoComplete="off"
               value={collegeyear}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -251,6 +279,7 @@ const Form = () => {
               className="form-select"
               id="inputGroupSelect01"
               onChange={handleChange}
+              required
               name="ticket"
             >
               <option selected>Purchase Item</option>
