@@ -29,7 +29,7 @@ const PTable = () => {
           color: "rgb(207, 198, 198)",
         }}
       >
-        *Flat 50% off for NIT Durgapur Students
+        *Flat Rs 50/- off for NIT Durgapur Students
       </h2>
 
       <h2
