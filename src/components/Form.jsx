@@ -4,8 +4,6 @@ import "../CSS/form.css";
 const Form = () => {
   const values = {
     name: "",
-    age: "",
-    // gender:"",
     address: "",
     city: "",
     state: "",
@@ -16,7 +14,9 @@ const Form = () => {
     college: "",
     collegeyear: "",
     ticket: "",
+    size: "",
   };
+
   const [initialState, setState] = useState(values);
   const [data, setData] = useState({
     // fname:"",
@@ -27,7 +27,6 @@ const Form = () => {
 
   const {
     name,
-    age,
     address,
     city,
     state,
@@ -38,6 +37,7 @@ const Form = () => {
     college,
     collegeyear,
     ticket,
+    size,
   } = initialState;
 
   const handleChange = (e) => {
@@ -59,7 +59,6 @@ const Form = () => {
           body: JSON.stringify([
             [
               name,
-              age,
               address,
               city,
               state,
@@ -70,6 +69,7 @@ const Form = () => {
               college,
               collegeyear,
               ticket,
+              size,
             ],
           ]),
         }
@@ -78,7 +78,6 @@ const Form = () => {
       setState({
         ...initialState,
         name: "",
-        age: "",
         address: "",
         city: "",
         state: "",
@@ -89,6 +88,7 @@ const Form = () => {
         college: "",
         collegeyear: "",
         ticket: "",
+        size: "",
       });
 
       // alert(
@@ -116,7 +116,8 @@ const Form = () => {
               required
             />
           </div>
-          <div className="required-field">
+
+          {/* <div className="required-field">
             <label htmlFor="age"></label>
             <input
               placeholder="Age"
@@ -127,7 +128,7 @@ const Form = () => {
               onChange={handleChange}
               required
             />
-          </div>
+          </div> */}
 
           {/* <div className="required-field">
                         <label htmlFor="gender"></label>
@@ -258,7 +259,7 @@ const Form = () => {
             />
           </div>
 
-          <div style={{ backgroundColor: "#0D0D0D" }} class="required-field">
+          <div>
             <label htmlFor="items"></label>
             <select
               style={{
@@ -277,15 +278,50 @@ const Form = () => {
                 color: "#ffff",
               }}
               className="form-select"
-              id="inputGroupSelect01"
               onChange={handleChange}
               required
               name="ticket"
+              value={ticket}
             >
               <option selected>Purchase Item</option>
               <option value="Ticket">Ticket</option>
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="size"></label>
+            <select
+              style={{
+                backgroundColor: "#0D0D0D",
+                boxShadow: "none",
+                borderRadius: "0",
+                borderBottom: "2px solid red",
+                borderLeft: "2px solid red",
+                borderTop: "none",
+                borderRight: "none",
+                display: "block",
+                padding: "0.5rem 0.75rem",
+                width: "100%",
+                fontSize: "1rem",
+                lineHeight: "1.25",
+                color: "#ffff",
+              }}
+              className="form-select"
+              onChange={handleChange}
+              name="size"
+              value={size}
+            >
+              <option selected value="">
+                Size Of T-Shirt
+              </option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="2XL">2XL</option>
+              <option value="3XL">3XL</option>
             </select>
           </div>
 
@@ -297,7 +333,7 @@ const Form = () => {
             type="submit"
             value="Register"
           >
-            Order
+            Register
           </button>
 
           {/* <!-- Modal --> */}

@@ -8,8 +8,11 @@ const PTable = () => {
       <table className="table table-dark border-danger table-bordered">
         <thead>
           <tr>
+
             <th scope="col"></th>
             <th scope="col">Ticket</th>
+
+
             <th scope="col">T-Shirt</th>
             <th scope="col">Ticket + Tshirt</th>
           </tr>
@@ -29,6 +32,17 @@ const PTable = () => {
           </tr>
         </tbody>
       </table>
+      <h2
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontSize: "1.2rem",
+          color: "rgb(207, 198, 198)",
+        }}
+      >
+        *Flat Rs 50/- off for NIT Durgapur Students
+      </h2>
+
       <h2
         style={{
           color: "white",
