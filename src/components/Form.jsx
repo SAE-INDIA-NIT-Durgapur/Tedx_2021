@@ -30,6 +30,7 @@ const Form = () => {
     city: "",
     state: "",
     country: "",
+    pincode: "",
     email: "",
     phone: "",
     college: "",
@@ -54,6 +55,7 @@ const Form = () => {
     city,
     state,
     country,
+    pincode,
     email,
     phone,
     college,
@@ -67,6 +69,7 @@ const Form = () => {
   };
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
 
     // console.log("Submit");
@@ -87,6 +90,7 @@ const Form = () => {
               city,
               state,
               country,
+              pincode,
               email,
               phone,
               college,
@@ -107,6 +111,7 @@ const Form = () => {
         city: "",
         state: "",
         country: "",
+        pincode: "",
         email: "",
         phone: "",
         college: "",
@@ -151,6 +156,7 @@ const Form = () => {
               autoComplete="off"
               value={age}
               onChange={handleChange}
+              required
             />
           </div> */}
 
@@ -215,6 +221,21 @@ const Form = () => {
               value={country}
               onChange={handleChange}
               required
+
+            />
+          </div>
+
+          <div className="required-field">
+            <label htmlFor="pincode"></label>
+            <input
+              placeholder="Pin Code"
+              type="text"
+              name="pincode"
+              autoComplete="off"
+              value={pincode}
+              onChange={handleChange}
+              required
+
             />
           </div>
 
@@ -290,6 +311,7 @@ const Form = () => {
               }}
               className="form-select"
               onChange={handleChange}
+              required
               name="ticket"
               value={ticket}
               required
