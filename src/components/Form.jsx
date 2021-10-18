@@ -1,5 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../CSS/form.css";
+import { Modal, Button } from "react-bootstrap";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title>Order Processing....</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h5 style={{ textAlign: "center" }}>
+          Thank you for your order! We will reach out to you with further
+          details very soon!
+        </h5>
+      </Modal.Body>
+    </Modal>
+  );
+}
 
 const Form = () => {
   const values = {
@@ -24,6 +46,8 @@ const Form = () => {
     // phone:"",
   });
 
+  const [modalShow, setModalShow] = React.useState(false);
+
   const {
     name,
     address,
@@ -45,7 +69,10 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // console.log("Submit");
     // console.log(initialState);
+    setModalShow(true);
+    // show the modal
 
     try {
       const response = await fetch(
@@ -70,7 +97,9 @@ const Form = () => {
           ]),
         }
       );
+
       await response.json();
+
       setState({
         ...initialState,
         name: "",
@@ -90,6 +119,7 @@ const Form = () => {
       //   "Thank you for your order! We will reach out to you with further details soon!"
       // );
       // console.log("Thanks");
+      // console.log(initialState);
     } catch (err) {
       console.log(err);
     }
@@ -108,6 +138,7 @@ const Form = () => {
               autoComplete="off"
               value={name}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -144,6 +175,7 @@ const Form = () => {
               autoComplete="off"
               value={address}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -156,6 +188,7 @@ const Form = () => {
               autoComplete="off"
               value={city}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -168,6 +201,7 @@ const Form = () => {
               autoComplete="off"
               value={state}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -180,6 +214,7 @@ const Form = () => {
               autoComplete="off"
               value={country}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -192,6 +227,7 @@ const Form = () => {
               autoComplete="off"
               value={email}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -204,6 +240,7 @@ const Form = () => {
               autoComplete="off"
               value={phone}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -216,6 +253,7 @@ const Form = () => {
               autoComplete="off"
               value={college}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -228,10 +266,11 @@ const Form = () => {
               autoComplete="off"
               value={collegeyear}
               onChange={handleChange}
+              required
             />
           </div>
 
-          <div>
+          <div className="required-field">
             <label htmlFor="items"></label>
             <select
               style={{
@@ -253,8 +292,11 @@ const Form = () => {
               onChange={handleChange}
               name="ticket"
               value={ticket}
+              required
             >
-              <option selected>Purchase Item</option>
+              <option selected value="">
+                Purchase Items
+              </option>
               <option value="Ticket">Ticket</option>
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
@@ -296,55 +338,15 @@ const Form = () => {
             </select>
           </div>
 
-          {/* <!-- Button trigger modal --> */}
-          <button
-            class="btn btn-block"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-            type="submit"
-            value="Register"
-          >
+          <button class="btn btn-block" type="submit" value="Register">
             Register
           </button>
 
           {/* <!-- Modal --> */}
-          <div
-            class="modal fade"
-            id="exampleModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div
-                class="modal-content"
-                style={{ backgroundColor: "rgb(255 255 255 / 91%)" }}
-              >
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    Order Processing....
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body" style={{ textAlign: "center" }}>
-                  Thank you for your order! We will reach out to you with
-                  further details very soon!
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div>
-            <input className="btn" type="submit" value="Register" />
-          </div> */}
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
         </div>
       </form>
     </>
