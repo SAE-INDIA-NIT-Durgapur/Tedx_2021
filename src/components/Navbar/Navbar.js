@@ -32,12 +32,12 @@ const Navbar = ({ toggle }) => {
     <Nav>
       <NavbarConainer>
         <NavLink className="nav_logo" to="/">
-          <img
+          {/* <img
             src={logo}
             className="nav_logo"
             style={{ height: "35px", width: "100%", padding: "0!important" }}
             alt="logo"
-          />
+          /> */}
         </NavLink>
 
         <MobileIcon onClick={toggle}>
