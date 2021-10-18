@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/form.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
   const values = {
@@ -91,10 +93,20 @@ const Form = () => {
         size: "",
       });
 
-      // alert(
-      //   "Thank you for your order! We will reach out to you with further details soon!"
-      // );
-      // console.log("Thanks");
+
+      toast("Thank you for your order! We will reach out to you with further details soon!", {
+        className: "custom-style",
+        progressClassName: "custom-progress",
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+
+      });
+      console.log("Thanks");
     } catch (err) {
       console.log(err);
     }
@@ -117,30 +129,7 @@ const Form = () => {
             />
           </div>
 
-          {/* <div className="required-field">
-            <label htmlFor="age"></label>
-            <input
-              placeholder="Age"
-              type="text"
-              name="age"
-              autoComplete="off"
-              value={age}
-              onChange={handleChange}
-              required
-            />
-          </div> */}
 
-          {/* <div className="required-field">
-                        <label htmlFor="gender"></label>
-                        <input
-                            placeholder="Gender"
-                            type="text"
-                            name="gender"
-                            autoComplete="off"
-                            value={gender}
-                            onChange={handleChange}
-                        />
-                    </div> */}
 
           <div className="required-field">
             <label htmlFor="address"></label>
@@ -246,17 +235,37 @@ const Form = () => {
             />
           </div>
 
-          <div className="required-field">
-            <label htmlFor="collegeyear"></label>
-            <input
-              placeholder="College Year"
-              type="text"
-              name="collegeyear"
-              autoComplete="off"
-              value={collegeyear}
+          <div>
+            <label htmlFor="items"></label>
+            <select
+              style={{
+                backgroundColor: "#0D0D0D",
+                boxShadow: "none",
+                borderRadius: "0",
+                borderBottom: "2px solid red",
+                borderLeft: "2px solid red",
+                borderTop: "none",
+                borderRight: "none",
+                display: "block",
+                padding: "0.5rem 0.75rem",
+                width: "100%",
+                fontSize: "1rem",
+                lineHeight: "1.25",
+                color: "#ffff",
+              }}
+              className="form-select"
               onChange={handleChange}
               required
-            />
+              name="collegeyear"
+              value={collegeyear}
+              required
+            >
+              <option selected>college year</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+            </select>
           </div>
 
           <div>
@@ -282,6 +291,7 @@ const Form = () => {
               required
               name="ticket"
               value={ticket}
+              required
             >
               <option selected>Purchase Item</option>
               <option value="Ticket">Ticket</option>
@@ -312,6 +322,7 @@ const Form = () => {
               onChange={handleChange}
               name="size"
               value={size}
+              required
             >
               <option selected value="">
                 Size Of T-Shirt
@@ -328,13 +339,14 @@ const Form = () => {
           {/* <!-- Button trigger modal --> */}
           <button
             class="btn btn-block"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
+
+
             type="submit"
             value="Register"
           >
             Register
           </button>
+          <ToastContainer />
 
           {/* <!-- Modal --> */}
           <div
