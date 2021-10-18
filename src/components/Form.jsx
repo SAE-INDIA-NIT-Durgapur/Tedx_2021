@@ -322,7 +322,7 @@ const Form = () => {
               onChange={handleChange}
               name="size"
               value={size}
-              required
+
             >
               <option selected value="">
                 Size Of T-Shirt
