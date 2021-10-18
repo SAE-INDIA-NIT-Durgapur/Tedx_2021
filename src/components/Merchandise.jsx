@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "../CSS/form.css";
 
@@ -27,6 +28,7 @@ const Merchandise = (props) => {
     // email:"",
     // phone:"",
   });
+
 
   const {
     name,
@@ -227,6 +229,16 @@ const Merchandise = (props) => {
             />
           </div>
 
+<<<<<<< HEAD
+                    <div>
+                        <input className="btn" type="submit" value="Order"/>
+                    </div>
+
+                   
+                </div>
+            </form>
+        </>
+=======
           <div className="required-field">
             <label htmlFor="collegeyear"></label>
             <input
@@ -238,6 +250,7 @@ const Merchandise = (props) => {
               onChange={handleChange}
             />
           </div>
+>>>>>>> 1d20308664f99536e4ae1b64107b75bbe972d947
 
           <div className="required-field">
             <label htmlFor="tshirtsize"></label>
