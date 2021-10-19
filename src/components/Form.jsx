@@ -54,7 +54,7 @@ const Form = () => {
 
     try {
       const response = await fetch(
-        "https://v1.nocodeapi.com/ishangupta614/google_sheets/EFbQThhmJkbEKSRY?tabId=Sheet1",
+        "https://v1.nocodeapi.com/subham/google_sheets/nwzARhmZQUfDLUVv?tabId=Sheet1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -93,7 +93,9 @@ const Form = () => {
         size: "",
       });
 
-
+      alert(
+        "Thank you for your order! We will reach out to you with further details soon!"
+      );
       toast("Thank you for your order! We will reach out to you with further details soon!", {
         className: "custom-style",
         progressClassName: "custom-progress",
@@ -322,7 +324,7 @@ const Form = () => {
               onChange={handleChange}
               name="size"
               value={size}
-
+              required
             >
               <option selected value="">
                 Size Of T-Shirt
@@ -346,7 +348,6 @@ const Form = () => {
           >
             Register
           </button>
-          <ToastContainer />
 
           {/* <!-- Modal --> */}
           <div
