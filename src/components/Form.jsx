@@ -261,7 +261,7 @@ const Form = () => {
               value={collegeyear}
               required
             >
-              <option selected>college year</option>
+              <option selected value="">college year</option>
               <option value="1st">1st</option>
               <option value="2nd">2nd</option>
               <option value="3rd">3rd</option>
@@ -294,7 +294,7 @@ const Form = () => {
               value={ticket}
               required
             >
-              <option selected>Purchase Item</option>
+              <option selected value="">Purchase Item</option>
               <option value="Ticket">Ticket</option>
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
