@@ -93,9 +93,7 @@ const Form = () => {
         size: "",
       });
 
-      alert(
-        "Thank you for your order! We will reach out to you with further details soon!"
-      );
+
       toast("Thank you for your order! We will reach out to you with further details soon!", {
         className: "custom-style",
         progressClassName: "custom-progress",
