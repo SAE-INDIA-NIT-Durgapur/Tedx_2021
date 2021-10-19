@@ -27,16 +27,7 @@ const PTable = () => {
           
         </tbody>
       </table>
-      <h2
-        style={{
-          color: "white",
-          textAlign: "center",
-          fontSize: "1.2rem",
-          color: "rgb(207, 198, 198)",
-        }}
-      >
-        *Flat Rs 50/- off for NIT Durgapur Students
-      </h2>
+      
 
       <h2
         style={{
