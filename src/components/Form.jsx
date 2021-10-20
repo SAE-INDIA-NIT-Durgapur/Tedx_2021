@@ -55,7 +55,9 @@ const Form = () => {
 
     try {
       const response = await fetch(
+
         "https://v1.nocodeapi.com/ishangupta/google_sheets/eofIBPjlYnODPKFP?tabId=Sheet1",
+
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -323,7 +325,7 @@ const Form = () => {
               onChange={handleChange}
               name="size"
               value={size}
-
+              required
             >
               <option selected value="">
                 Size Of T-Shirt
@@ -347,7 +349,6 @@ const Form = () => {
           >
             Register
           </button>
-          <ToastContainer />
 
           {/* <!-- Modal --> */}
           <div
