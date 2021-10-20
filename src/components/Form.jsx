@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../CSS/form.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import axios from "axios";
 const Form = () => {
   const values = {
     name: "",
@@ -14,8 +14,8 @@ const Form = () => {
     email: "",
     phone: "",
     college: "",
-    collegeyear: "",
-    ticket: "",
+    year: "",
+    item: "",
     size: "",
   };
 
@@ -37,8 +37,8 @@ const Form = () => {
     email,
     phone,
     college,
-    collegeyear,
-    ticket,
+    year,
+    item,
     size,
   } = initialState;
 
@@ -50,50 +50,50 @@ const Form = () => {
 
     e.preventDefault();
 
+
     // console.log(initialState);
 
-    try {
-      const response = await fetch(
-        "https://v1.nocodeapi.com/subham/google_sheets/nwzARhmZQUfDLUVv?tabId=Sheet1",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify([
-            [
-              name,
-              address,
-              city,
-              state,
-              country,
-              pincode,
-              email,
-              phone,
-              college,
-              collegeyear,
-              ticket,
-              size,
-            ],
-          ]),
-        }
-      );
-      await response.json();
-      setState({
-        ...initialState,
-        name: "",
-        address: "",
-        city: "",
-        state: "",
-        country: "",
-        pincode: "",
-        email: "",
-        phone: "",
-        college: "",
-        collegeyear: "",
-        ticket: "",
-        size: "",
-      });
-
-
+    // try {
+    //   const response = await fetch(
+    //     "http://3.128.3.29/",
+    //     {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       body: JSON.stringify([
+    //         [
+    //           name,
+    //           address,
+    //           city,
+    //           state,
+    //           country,
+    //           pincode,
+    //           email,
+    //           phone,
+    //           college,
+    //           year,
+    //           item,
+    //           size,
+    //         ],
+    //       ]),
+    //     }
+    //   );
+    //   await response.json();
+    //   setState({
+    //     ...initialState,
+    //     name: "",
+    //     address: "",
+    //     city: "",
+    //     state: "",
+    //     country: "",
+    //     pincode: "",
+    //     email: "",
+    //     phone: "",
+    //     college: "",
+    //     year: "",
+    //     item: "",
+    //     size: "",
+    //   });
+    axios.post("http://3.128.3.29/", initialState).then((res) => {
       toast("Thank you for your order! We will reach out to you with further details soon!", {
         className: "custom-style",
         progressClassName: "custom-progress",
@@ -107,9 +107,10 @@ const Form = () => {
 
       });
       console.log("Thanks");
-    } catch (err) {
-      console.log(err);
-    }
+    });
+
+
+
   };
   return (
     <>
@@ -256,11 +257,11 @@ const Form = () => {
               className="form-select"
               onChange={handleChange}
               required
-              name="collegeyear"
-              value={collegeyear}
+              name="year"
+              value={year}
               required
             >
-              <option selected>college year</option>
+              <option selected value="">college year</option>
               <option value="1st">1st</option>
               <option value="2nd">2nd</option>
               <option value="3rd">3rd</option>
@@ -289,11 +290,11 @@ const Form = () => {
               className="form-select"
               onChange={handleChange}
               required
-              name="ticket"
-              value={ticket}
+              name="item"
+              value={item}
               required
             >
-              <option selected>Purchase Item</option>
+              <option selected value="">Purchase Item</option>
               <option value="Ticket">Ticket</option>
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
