@@ -93,23 +93,24 @@ const Form = () => {
     //     item: "",
     //     size: "",
     //   });
-    axios.post("http://3.128.3.29/", initialState).then((res) => {
-      toast("Thank you for your order! We will reach out to you with further details soon!", {
-        className: "custom-style",
-        progressClassName: "custom-progress",
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+    axios.post("https://api.tedxnitdurgapur.com/", initialState).then((res) => {
 
+    
+     toast("Thank you for your order! We will reach out to you with further details soon!", {
+      className:"custom-style",
+                progressClassName:"custom-progress",
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
       });
+
       console.log("Thanks");
     });
-
-
+ 
 
   };
   return (
@@ -261,7 +262,7 @@ const Form = () => {
               value={year}
               required
             >
-              <option selected value="">college year</option>
+            <option selected value="">college year</option>
               <option value="1st">1st</option>
               <option value="2nd">2nd</option>
               <option value="3rd">3rd</option>
@@ -347,6 +348,7 @@ const Form = () => {
           >
             Register
           </button>
+          <ToastContainer/>
 
           {/* <!-- Modal --> */}
           <div

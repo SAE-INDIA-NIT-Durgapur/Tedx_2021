@@ -82,3 +82,13 @@ footer {
   background-position: center;
   
 }
+
+
+
+.custom-style{
+   color: #fff!important;
+   background-color: #ff2b06!important;
+}
+.custom-progress{
+  background:white!important;
+}
