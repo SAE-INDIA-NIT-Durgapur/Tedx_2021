@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../CSS/form.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import axios from "axios";
 const Form = () => {
   const values = {
     name: "",
@@ -14,8 +14,8 @@ const Form = () => {
     email: "",
     phone: "",
     college: "",
-    collegeyear: "",
-    ticket: "",
+    year: "",
+    item: "",
     size: "",
   };
 
@@ -37,8 +37,8 @@ const Form = () => {
     email,
     phone,
     college,
-    collegeyear,
-    ticket,
+    year,
+    item,
     size,
   } = initialState;
 
@@ -50,6 +50,7 @@ const Form = () => {
 
     e.preventDefault();
 
+<<<<<<< HEAD
     
     // console.log(initialState);
 
@@ -95,24 +96,70 @@ const Form = () => {
         ticket: "",
         size: "",
       });
+=======
+>>>>>>> 03efe71ddfb9d644bc88b5859108f4e71e89c9df
 
+    // console.log(initialState);
 
-      toast("Thank you for your order! We will reach out to you with further details soon!", {
-        className: "custom-style",
-        progressClassName: "custom-progress",
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+    // try {
+    //   const response = await fetch(
+    //     "http://3.128.3.29/",
+    //     {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       body: JSON.stringify([
+    //         [
+    //           name,
+    //           address,
+    //           city,
+    //           state,
+    //           country,
+    //           pincode,
+    //           email,
+    //           phone,
+    //           college,
+    //           year,
+    //           item,
+    //           size,
+    //         ],
+    //       ]),
+    //     }
+    //   );
+    //   await response.json();
+    //   setState({
+    //     ...initialState,
+    //     name: "",
+    //     address: "",
+    //     city: "",
+    //     state: "",
+    //     country: "",
+    //     pincode: "",
+    //     email: "",
+    //     phone: "",
+    //     college: "",
+    //     year: "",
+    //     item: "",
+    //     size: "",
+    //   });
+    axios.post("https://api.tedxnitdurgapur.com/", initialState).then((res) => {
 
+    
+     toast("Thank you for your order! We will reach out to you with further details soon!", {
+      className:"custom-style",
+                progressClassName:"custom-progress",
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
       });
+
       console.log("Thanks");
-    } catch (err) {
-      console.log(err);
-    }
+    });
+ 
+
   };
   return (
     <>
@@ -259,11 +306,11 @@ const Form = () => {
               className="form-select"
               onChange={handleChange}
               required
-              name="collegeyear"
-              value={collegeyear}
+              name="year"
+              value={year}
               required
             >
-              <option selected>college year</option>
+            <option selected value="">college year</option>
               <option value="1st">1st</option>
               <option value="2nd">2nd</option>
               <option value="3rd">3rd</option>
@@ -292,11 +339,11 @@ const Form = () => {
               className="form-select"
               onChange={handleChange}
               required
-              name="ticket"
-              value={ticket}
+              name="item"
+              value={item}
               required
             >
-              <option selected>Purchase Item</option>
+              <option selected value="">Purchase Item</option>
               <option value="Ticket">Ticket</option>
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
@@ -349,6 +396,7 @@ const Form = () => {
           >
             Register
           </button>
+          <ToastContainer/>
 
           {/* <!-- Modal --> */}
           <div
