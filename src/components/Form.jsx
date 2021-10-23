@@ -50,54 +50,54 @@ const Form = () => {
 
     e.preventDefault();
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
     
-    // console.log(initialState);
+//     // console.log(initialState);
 
-    try {
-      const response = await fetch(
+//     try {
+//       const response = await fetch(
 
-        "https://v1.nocodeapi.com/ishangupta/google_sheets/eofIBPjlYnODPKFP?tabId=Sheet1",
+//         "https://v1.nocodeapi.com/ishangupta/google_sheets/eofIBPjlYnODPKFP?tabId=Sheet1",
 
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify([
-            [
-              name,
-              address,
-              city,
-              state,
-              country,
-              pincode,
-              email,
-              phone,
-              college,
-              collegeyear,
-              ticket,
-              size,
-            ],
-          ]),
-        }
-      );
-      await response.json();
-      setState({
-        ...initialState,
-        name: "",
-        address: "",
-        city: "",
-        state: "",
-        country: "",
-        pincode: "",
-        email: "",
-        phone: "",
-        college: "",
-        collegeyear: "",
-        ticket: "",
-        size: "",
-      });
-=======
->>>>>>> 03efe71ddfb9d644bc88b5859108f4e71e89c9df
+//         {
+//           method: "POST",
+//           headers: { "Content-Type": "application/json" },
+//           body: JSON.stringify([
+//             [
+//               name,
+//               address,
+//               city,
+//               state,
+//               country,
+//               pincode,
+//               email,
+//               phone,
+//               college,
+//               collegeyear,
+//               ticket,
+//               size,
+//             ],
+//           ]),
+//         }
+//       );
+//       await response.json();
+//       setState({
+//         ...initialState,
+//         name: "",
+//         address: "",
+//         city: "",
+//         state: "",
+//         country: "",
+//         pincode: "",
+//         email: "",
+//         phone: "",
+//         college: "",
+//         collegeyear: "",
+//         ticket: "",
+//         size: "",
+//       });
+// =======
+// >>>>>>> 03efe71ddfb9d644bc88b5859108f4e71e89c9df
 
     // console.log(initialState);
 
