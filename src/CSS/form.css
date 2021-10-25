@@ -99,9 +99,9 @@ input[type="text"] {
   user-select: none;
 }
 
-.btn:hover {
-  background-color: #ffff;
-  color: #ff2b06;
+.btn {
+  background-color: #ff2b06;
+  color: #ffff;
 }
 
 .merchandise_img {

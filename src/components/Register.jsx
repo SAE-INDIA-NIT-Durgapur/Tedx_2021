@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/register.css";
 import logo from "./tedxnitdgp.png";
-import Form from "./Form.jsx";
+
 import PTable from "./pTable";
 import SizeTable from "./SizeTable";
 
@@ -28,8 +28,19 @@ const Register = () => {
             <PTable />
           </div>
         </div>
-
-        <Form />
+        <div style={{maxWidth: "600px",padding: "5px"}}>
+        <a href="https://dare2compete.com/o/mWayboQ?lb=R7fQoJ0">
+          <button
+            class="btn btn-block"
+            href="https://dare2compete.com/o/mWayboQ?lb=R7fQoJ0"
+            target="_blank"
+            type="submit"
+            value="Register"
+          >
+            Register
+          </button>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -163,8 +163,9 @@ const Form = () => {
   };
   return (
     <>
-      <h1 className="form">Registration Form</h1>
-      <form className="container-form" onSubmit={handleSubmit}>
+      {/* <h1 className="form">Registration Form</h1> */}
+      <form className="container-form"><div>
+      {/* <form className="container-form" onSubmit={handleSubmit}>
         <div className="container">
           <div className="required-field">
             <label htmlFor="name"></label>
@@ -348,9 +349,9 @@ const Form = () => {
               <option value="T-Shirt">T-Shirt</option>
               <option value="Ticket+T-Shirt">Ticket + T-Shirt</option>
             </select>
-          </div>
+          </div> */}
 
-          <div>
+          {/* <div>
             <label htmlFor="size"></label>
             <select
               style={{
@@ -384,22 +385,24 @@ const Form = () => {
               <option value="2XL">2XL</option>
               <option value="3XL">3XL</option>
             </select>
-          </div>
+          </div> */}
 
           {/* <!-- Button trigger modal --> */}
+          <a href="https://dare2compete.com/o/mWayboQ?lb=R7fQoJ0">
           <button
             class="btn btn-block"
-
-
+            href="https://dare2compete.com/o/mWayboQ?lb=R7fQoJ0"
+            target="_blank"
             type="submit"
             value="Register"
           >
             Register
           </button>
-          <ToastContainer/>
+          </a>
+          {/* <ToastContainer/> */}
 
           {/* <!-- Modal --> */}
-          <div
+          {/* <div
             class="modal fade"
             id="exampleModalCenter"
             tabindex="-1"
@@ -431,7 +434,7 @@ const Form = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <div>
             <input className="btn" type="submit" value="Register" />

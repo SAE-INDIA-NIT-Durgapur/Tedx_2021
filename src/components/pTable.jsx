@@ -10,6 +10,7 @@ const PTable = () => {
           <tr>
 
         
+            <th scope="col"></th>
             <th scope="col">Ticket</th>
 
 
@@ -19,10 +20,17 @@ const PTable = () => {
         </thead>
         <tbody>
           <tr>
-            
+            <td>Other Institutes</td>
             <td>INR 99/-</td>
             <td>INR 299/-</td>
             <td>INR 349/-</td>
+          </tr>
+          <tr>
+            
+            <td>NIT DURGAPUR</td>
+            <td>INR 49/-</td>
+            <td>INR 279/-</td>
+            <td>INR 299/-</td>
           </tr>
           
         </tbody>
