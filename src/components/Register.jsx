@@ -28,7 +28,7 @@ const Register = () => {
             <PTable />
           </div>
         </div>
-        <div style={{maxWidth: "600px",padding: "5px"}}>
+        <div style={{maxWidth: "70%",padding: "5px"}}>
         <a href="https://dare2compete.com/o/mWayboQ?lb=R7fQoJ0">
           <button
             class="btn btn-block"

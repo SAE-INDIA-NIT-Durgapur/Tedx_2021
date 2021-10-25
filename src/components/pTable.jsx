@@ -10,7 +10,7 @@ const PTable = () => {
           <tr>
 
         
-            <th scope="col"></th>
+            {/* <th scope="col"></th> */}
             <th scope="col">Ticket</th>
 
 
@@ -20,18 +20,18 @@ const PTable = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Other Institutes</td>
+            {/* <td>Other Institutes</td> */}
             <td>INR 99/-</td>
             <td>INR 299/-</td>
             <td>INR 349/-</td>
           </tr>
-          <tr>
+          {/* <tr>
             
             <td>NIT DURGAPUR</td>
             <td>INR 49/-</td>
             <td>INR 279/-</td>
             <td>INR 299/-</td>
-          </tr>
+          </tr> */}
           
         </tbody>
       </table>
@@ -46,6 +46,8 @@ const PTable = () => {
         }}
       >
         Note: T-Shirt price inclusive of shipping
+        <br/><br/>
+        Discount INR 50 for NIT Durgapur Students.
       </h2>
     </div>
   );
