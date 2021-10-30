@@ -18,27 +18,16 @@
 .contain{
     font-size: 50px;
     padding-top: 40px;
-    
-    
-    
     font-weight: bolder;
-    /* text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-
-
-    text-decoration-color:azure */
 }
 
 
 .contain span {
     font-size: 50px;
     padding-top: 40px;
-    
     color:#ff2b06;
-   
 }
 .p1 {
-   
     font-size: 2.25rem;
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: 600;
@@ -137,9 +126,8 @@
     }
 } */
 .block {
-
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     margin: 20px;
     position: relative;
     overflow: hidden;
@@ -151,15 +139,20 @@
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-    
 }
 
+@media screen and (max-width: 400px){
+    .block{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .block:nth-child(1) {  
-     -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+     /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
     background-image: url("../images/rupesh.jpeg");
-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .block:nth-child(1) :hover{  
    scale: 1.7;
@@ -167,27 +160,33 @@ transition: 0.5s ease-in-out;
   
 }
 .block:nth-child(2) {
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
     background-image: url("../images/jade.jpeg");
 }
 
 .block:nth-child(3) {
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
     background-image: url("../images/kamna.jpeg");
 }
 
 .block:nth-child(4) {
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
     background-image: url("../images/kishwar.jpeg");
 }
 
 .block:nth-child(5) {
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
     background-image: url("../images/suhas.jpeg");
+}
+
+.block:nth-child(6) {
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
+    background-image: url("../images/munish.jpeg");
 }
 
 
@@ -237,7 +236,8 @@ transition: 0.5s ease-in-out;
 .text--quote {
     font-size: 14px;
     line-height: 150%;
-    color: #ff4400!important;
+    font-weight: bold;
+    color: white !important;
 }
 
 .text--person {
