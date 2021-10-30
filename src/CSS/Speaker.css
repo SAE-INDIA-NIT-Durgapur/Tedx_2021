@@ -190,6 +190,12 @@ transition: 0.5s ease-in-out;
     background-image: url("../images/suhas.jpeg");
 }
 
+.block:nth-child(6) {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    background-image: url("../images/munish.jpeg");
+}
+
 
 
 .overlay {

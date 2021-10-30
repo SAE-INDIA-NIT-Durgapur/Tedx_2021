@@ -104,14 +104,14 @@ const Speakers = () => {
             <div className="text--person"></div>
           </div>
         </div>
-        {/* <div className="block">
+        { <div className="block">
           <div className="overlay" />
           <div className="block--text">
-            <div className="text--head">Do it</div>
-            <div className="text--quote">“Do one thing every day that scares you.”</div>
-            <div className="text--person">Eleanor Roosevelt</div>
+            <div className="text--head"></div>
+            {/*<div className="text--quote"></div>"Founder of startups MENTORx Global and HoverRobotix. He has been awarded the prestigious "Karmveer Chakra" by United Nations. He is also the Noble Asian of the Year 2018"</div>*/}
+            <div className="text--person"></div>
           </div>
-        </div> */}
+        </div> }
       </div>
       </Slide>
     </div>
