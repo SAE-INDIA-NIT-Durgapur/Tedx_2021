@@ -31,7 +31,7 @@ function Countdown() {
   const startTime = Date.now() / 1000; // use UNIX timestamp in seconds
   const endTime = 1635676200; // use UNIX timestamp in seconds
 
-  const remainingTime = endTime - startTime;
+  const remainingTime = 0;
   const days = Math.ceil(remainingTime / daySeconds);
   const daysDuration = days * daySeconds;
 
