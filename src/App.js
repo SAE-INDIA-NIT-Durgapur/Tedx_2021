@@ -92,10 +92,7 @@ function App() {
                     <Footer data={`Shubham Agarwal-9038055767`} />
                   </Route>
 
-                  <Route exact path="/team">
-                    <Team />
-                    <Footer data={`Chetan Gupta-9874700937`} />
-                  </Route>
+                  
 
                   <Route exact path="/register" >
                     <Register />
