@@ -54,9 +54,7 @@ const Navbar = ({ toggle }) => {
           <NavLink to="/speakers" activeStyle>
             Speakers
           </NavLink>
-          <NavLink to="/team" activeStyle>
-            Team
-          </NavLink>
+          
           <NavLink to="/partners" activeStyle>
             Partners
           </NavLink>
