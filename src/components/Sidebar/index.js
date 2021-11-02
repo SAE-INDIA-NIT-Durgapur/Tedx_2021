@@ -22,9 +22,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarLink to='/speakers'  onClick={toggle}>
                     Speakers
                 </SidebarLink>
-                <SidebarLink to='/team'  onClick={toggle}>
-                    Team
-                </SidebarLink>
+                
                 <SidebarLink to='/partners'  onClick={toggle}>
                     Partners
                 </SidebarLink>
